@@ -2,7 +2,7 @@ export default function Inicial(){
     return (
         <div>
 
-        <h1>Página inicial</h1>
+        <h1>Hello </h1>
         
         </div>
     )
