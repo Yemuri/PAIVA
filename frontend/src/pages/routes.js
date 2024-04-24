@@ -3,6 +3,7 @@ import Inicial from './home/inicial'
 import Login from './login/paginaLogin'
 import InicioLeite from './leite/inicio/inicioLeite'
 import Navegacao from '../component/navegacao'
+import InicioCrianca from './crianca/inicioCrianca'
 
 
 export default function Rotas (){
@@ -13,8 +14,8 @@ export default function Rotas (){
                 <Routes>
                     <Route path='/' element={<Inicial />}/>
                     <Route path='/login' element={<Login />}/>
-                    <Route path='/leite' element={<InicioLeite />}/>
-                    
+                    <Route path='/casa-do-leite' element={<InicioLeite />}/>
+                    <Route path='/casa-da-crianca' element={<InicioCrianca/>}/>
                     
                 </Routes>
             </BrowserRouter>

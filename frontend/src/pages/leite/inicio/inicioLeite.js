@@ -1,6 +1,5 @@
 
 
-
 export default function InicioLeite(){
 
     return(
@@ -10,3 +9,4 @@ export default function InicioLeite(){
         </div>
     )
 }
+
