@@ -1,0 +1,33 @@
+nav {
+  padding: 2%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4e3e3b5;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: rgb(162, 161, 255);
+  transition: 0.3s;
+}
+
+.navbar-logo {
+  padding: 5px;
+  display: flex;
+  width: 150px;
+}
+
+.navbar-logo i {
+  padding: 0px 5px;
+}
+
+.nav-item {
+  padding: 3px;
+}

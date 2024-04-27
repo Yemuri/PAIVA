@@ -1,0 +1,36 @@
+.container-geral {
+  height: 100vh;
+  background: rgb(237, 164, 117);
+  background: linear-gradient(
+    90deg,
+    rgba(237, 164, 117, 1) 9%,
+    rgba(240, 173, 129, 1) 23%,
+    rgba(252, 182, 136, 1) 50%,
+    rgba(240, 173, 129, 1) 100%
+  );
+}
+.container-geral h2 {
+  color: rgb(37, 26, 26);
+  text-shadow: 0.3px 0 2px #946749;
+  margin: 2% 0 1% 2%;
+}
+
+.container-compromisso {
+  margin-left: 2%;
+  /* border: solid red 2px; */
+  width: 40vw;
+  max-width: 30vw;
+  text-align: justify;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  /* border: solid 4px yellow; */
+}
+
+.container-fotos {
+  /* border: solid blue 2px; */
+}
