@@ -1,3 +1,4 @@
+
 import "./leite.css";
 
 export default function InicioLeite() {
@@ -7,3 +8,4 @@ export default function InicioLeite() {
     </div>
   );
 }
+
