@@ -5,6 +5,7 @@ import InicioLeite from "./leite/inicio/inicioLeite";
 import Navegacao from "../component/navegacao";
 import InicioCrianca from "./crianca/inicioCrianca";
 import Idoso from "./idoso/inicioIdoso";
+import Footer from "../component/footer/footer";
 
 export default function Rotas() {
   return (
@@ -18,6 +19,7 @@ export default function Rotas() {
           <Route path="/casa-da-crianca" element={<InicioCrianca />} />
           <Route path="/abrigo-idosos" element={<Idoso />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
