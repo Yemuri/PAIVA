@@ -1,4 +1,4 @@
-.bodyLogin {
+.bodyLogin{
   background-color: #f4e3e3b5;
   background-image: url("../../images/wpp.png");
   background-size: cover; /*imagem completa todo o fundo*/
@@ -7,13 +7,13 @@
   display: grid;
 }
 
-.main {
+.main_login{
   display: flex;
   justify-content: center; /* Alinha ao centro horizontalmente */
   align-items: center; /* Alinha ao centro verticalmente */
 }
 
-.square {
+.square_login{
   background-color: #f4e3e3b5;
   border-radius: 20px;
   filter: blur(50%);
@@ -26,16 +26,16 @@
   align-items: center;
 }
 
-.content-square {
+.content-square_login{
   width: 100%;
 }
 
-.title-login {
+.title_login{
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 5rem !important;
   height: 150px;
 }
 
@@ -51,14 +51,14 @@
   align-items: center;
 }
 
-.input {
+.input_login {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3%;
 }
 
-form .input input {
+form .input_login input {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #484f56;
@@ -66,11 +66,11 @@ form .input input {
   padding: 2%;
 }
 
-form .input input::placeholder {
+form .input_login input::placeholder {
   color: #484f56;
 }
 
-form .input button {
+form .input_login button {
   border: none;
   color: white;
   background-color: #8b4c1c;
@@ -83,7 +83,7 @@ form .input button {
   font-weight: bold;
 }
 
-form .input button:hover {
+form .input_login button:hover {
   background-color: #04aa6d;
   transition: 0.4s;
 }

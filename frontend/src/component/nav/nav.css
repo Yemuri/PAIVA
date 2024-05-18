@@ -1,0 +1,119 @@
+/* nav {
+  padding: 2%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4e3e3b5;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: rgb(162, 161, 255);
+  transition: 0.3s;
+}
+
+.navbar-logo {
+  padding: 5px;
+  display: flex;
+  width: 150px;
+}
+
+.navbar-logo i {
+  padding: 0px 5px;
+}
+
+.nav-item {
+  padding: 3px;
+}
+
+header{
+  background: #f4e3e3b5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+header > h1{
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+header > h1 > a{
+  text-decoration: none;
+  color: black;
+}
+
+header > ion-icon{
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 10px
+}   
+
+header > ion-icon:hover{
+  color: #8b4c1c;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+menu{
+  display: none;
+  height: 90vh;
+  background-color: #8b4c1c;
+  width: 50%;
+  z-index: 100;
+  align-items:end;
+}
+
+menu > ul{
+  list-style-type: none;
+}
+
+menu > ul > li > a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+menu > ul > li{
+  padding: 10px;
+  font-size: 2em;
+}
+
+menu > ul > li:hover{
+  transition: 0.8s;
+  background-color: aliceblue;
+  color: #8b4c1c
+}
+
+menu > ul > li > a:hover{
+  color: #8b4c1c;
+}
+
+menu > h3 > a{
+  position: absolute;
+  padding: 10px;
+  bottom: 15px;
+  color:  white;
+  text-decoration: none;
+}
+
+menu > h3 > a:hover{
+  color: rgb(237, 178, 101);
+}
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
