@@ -64,19 +64,21 @@ export default function Footer() {
                 {/* <div className='row-footer'>
                     <FaRegArrowAltCircleUp />
                 </div> */}
-                <div className='row-footer'>
+                <div className='contact'>
                     <h3>Contato</h3>
+                    <div className='container_icones'>
                     <span className='icon_contact'><Link to=''><FaInstagramSquare /></Link></span>
                     <span className='icon_contact'><Link to=''><FaFacebook /></Link></span>
                     <span className='icon_contact'><Link to=''><MdEmail /></Link></span>
                     <span className='icon_contact'><Link to=''><FaGoogle /></Link></span>
                     <span className='icon_contact'><Link to=''><BsFillTelephoneFill /></Link></span>
+                    </div>
                 </div>
             </div>
             <div className='copyright'>
                 <div><h6>Copyright © 2024 - Todos os direitos reservados</h6></div>
                 <div>
-                    <button onClick={abrirModal}>Abrir modal</button>
+                    <a className='botaoabrirmodal' onClick={abrirModal}>Abrir modal</a>
                     <Modal isOpen={modalAberto}>
                         {/* <h6>MODAL ABERTO</h6> */}
                         <div>
