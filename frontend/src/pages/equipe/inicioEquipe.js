@@ -16,7 +16,7 @@ export default function InicioEquipe(){
           <img src={Jorgin} alt="Foto de perfil do Jorginho"/>
         </div>
         <div className="info">
-          <h2>Jorginho gameplay</h2>
+          <h2>Fulano da Silva</h2>
           <h4>Coordenadora da Fundação</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna. </p>
         </div>
@@ -24,7 +24,7 @@ export default function InicioEquipe(){
 
       <div className='pessoa'>
         <div className="info">
-          <h2>Jorginho gameplay</h2>
+          <h2>Fulano da Silva</h2>
           <h4>Coordenadora da Fundação</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna. </p>
         </div>
@@ -38,7 +38,7 @@ export default function InicioEquipe(){
           <img src={Jorgin} alt="Foto de perfil do Jorginho"/>
         </div>
         <div className="info">
-          <h2>Jorginho gameplay</h2>
+          <h2>Fulano da Silva</h2>
           <h4>Coordenadora da Fundação</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna. </p>
         </div>
@@ -46,7 +46,7 @@ export default function InicioEquipe(){
 
       <div className='pessoa'>
         <div className="info">
-          <h2>Jorginho gameplay</h2>
+          <h2>Fulano da Silva</h2>
           <h4>Coordenadora da Fundação</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, nisi et ullamcorper dapibus, libero nibh tincidunt mauris, ornare mollis nisi orci scelerisque lorem. Praesent aliquet quam sed semper rutrum. Aenean id diam urna. </p>
         </div>
