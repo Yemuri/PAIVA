@@ -12,20 +12,10 @@ export default function InicioContas(){
 {/* começar a partir daqui - essa classe "container-container" deve ser a principal*/}
             <div className="container-contas">
                 <div className="title_contas">
-                    <h2>Pestação de Contas</h2>
+                    <h2>Prestação de Contas</h2>
                 </div>
 
                 <div className="container-cards-pdf">
-                    {/* <Link>
-                        <div className="card-pdf">
-                            <div className="title-card-pdf">
-                                <h3>Balanço ABC - 2024</h3>
-                            </div>
-                            <div className="body-card-pdf">
-                                <FaFilePdf />
-                            </div>
-                        </div>
-                    </Link> */}
                     <div className="card-pdf">
                         <div className="title-card-pdf">
                             <h3>Balanço ABC - 2024</h3>
