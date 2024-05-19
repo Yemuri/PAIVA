@@ -77,8 +77,8 @@ export default function Footer() {
             </div>
             <div className='copyright'>
                 <div><h6>Copyright © 2024 - Todos os direitos reservados</h6></div>
-                <div>
-                    <a className='botaoabrirmodal' onClick={abrirModal}>Abrir modal</a>
+                <div className='devs'>
+                    <a className='botaoabrirmodal' onClick={abrirModal}>Devs</a>
                     <Modal isOpen={modalAberto}>
                         {/* <h6>MODAL ABERTO</h6> */}
                         <div>
@@ -91,7 +91,7 @@ export default function Footer() {
                            <a href='mailto: email@gmail.com'> <p>Thais</p></a>
                            <a href='mailto: email@gmail.com'> <p>Yemuri</p></a>
                         </div>
-                        <button onClick={fecharModal}>{'❌'}</button>
+                        <button className='fecharmodals' onClick={fecharModal}>{'❌'}</button>
                     </Modal>
                 </div>
             </div>

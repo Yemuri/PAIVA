@@ -28,6 +28,7 @@
 .contact h3{
     display: flex;
     justify-content: center;
+    color: #fff;
 }
 
 .row-footer > h3{
@@ -75,6 +76,7 @@
     transition: 0.1s;
 }
 
+
 .copyright{
     text-align: center;
     min-width: 100%;
@@ -83,9 +85,29 @@
     font-size: 0.5em;
     /* background-color: #080F0F; */
     background-color: #A34F05;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.3) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.3) 100%);  
+    justify-content: space-between;
+    align-items: center;
+    
+
 }
 
 .botaoabrirmodal{
-    font-size: 2rem;
+    font-size: 1rem;
+    padding: 1px 1px;
+    background-color: beige;
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+    text-decoration: none; 
+    font-size: 14px;   
+    font-weight: 700; 
+    display: flex;
+    cursor: pointer;
+}
+
+.fecharmodals{
+    display: flex;
+    position: fixed;
+    bottom: 904;
+    right: 44;
 }
