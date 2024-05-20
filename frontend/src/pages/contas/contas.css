@@ -35,8 +35,9 @@
 }
 
 .title_contas{
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .card-pdf{
