@@ -20,6 +20,7 @@ export default function Rotas() {
           <Route path="/casa-da-crianca" element={<InicioCrianca />} />
           <Route path="/abrigo-idosos" element={<Idoso />} />
           <Route path="/equipe" element={<InicioEquipe />} />
+          {/* <Route path="/casa-da-crianca" element={<InicioCrianca />} /> */}
 
         </Routes>
         <Footer />
