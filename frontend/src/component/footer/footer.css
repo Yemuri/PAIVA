@@ -1,12 +1,13 @@
 .container-geral {
     width: 100%;
     display: flex;
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
+    /* position: fixed;
+    bottom: 0; */
     overflow-x: hidden;
     flex-direction: column;
-    justify-content: space-between;
-    border: blue solid 2px;
+    /* justify-content: space-between;
+    border: blue solid 2px; */
     background: #8b4c1c;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.3) 100%);
     height: 12rem;
@@ -37,13 +38,19 @@
     justify-content: center;
     margin-top: 10%;
     color: white;
-
+    
 }
 
 .devpor  a{
     color:pink;
     font-weight: bolder;
     text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.devpor a:hover{
+    color: violet;
 }
 
 .contact h3 {
@@ -109,7 +116,7 @@
     /* align-items: center; */
 }
 
-.botaoabrirmodal {
+/* .botaoabrirmodal {
     font-size: 1rem;
     padding: 1px 1px;
     background-color: beige;
@@ -120,22 +127,23 @@
     font-weight: 700;
     display: flex;
     cursor: pointer;
-}
-
+} */
+/* 
 .fecharmodals {
     display: flex;
     position: fixed;
     bottom: 904;
     right: 44;
-}
+} */
 
 .container-desenvolvedores {
-    border: solid green 2px;
     background-color: #db955f;
+    border-radius: 0.4cm;
 }
 
 .container-desenvolvedores{
-    width: 70%;
+    display: flex;
+    width: 60%;
     position: absolute;
     left: 15%;
     top: 50;
@@ -152,4 +160,7 @@
     font-weight: bold;
     
     
+}
+.container-desenvolvedores p :hover{
+    color: #FCF6B1;
 }
