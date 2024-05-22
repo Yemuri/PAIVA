@@ -10,6 +10,7 @@ import InicioCrianca from "./crianca/inicioCrianca";
 import Idoso from "./idoso/inicioIdoso";
 import Footer from "../component/footer/footer";
 import InicioEquipe from "./equipe/inicioEquipe";
+import PrestacaoConta from "./prestacao_conta/paginaConta";
 
 import InicialAuth from "../pagesAuth/homeAuth/inicial"
 
@@ -31,7 +32,7 @@ export default function Rotas() {
             <Route path="/casa-da-crianca" element={<InicioCrianca />} />
             <Route path="/abrigo-idosos" element={<Idoso />} />
             <Route path="/equipe" element={<InicioEquipe />} />
-
+            <Route path="/prestacaoconta" element={<PrestacaoConta />} />
           </Routes>
           <Footer />
         </BrowserRouter>

@@ -18,7 +18,7 @@ export default function Navegacao() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#features"><Link to='/equipe'>Equipe</Link></Nav.Link>
-              <Nav.Link href="#pricing">Prestação de contas</Nav.Link>
+              <Nav.Link href="/prestacaoconta">Prestação de contas</Nav.Link>
               <NavDropdown title="Projetos" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Casa do Leite</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Casa da Criança</NavDropdown.Item>
@@ -32,7 +32,7 @@ export default function Navegacao() {
             <Nav>
               <Nav.Link href="#deets"><Link to='/login'><FaRegUserCircle /> Acesso Restrito</Link></Nav.Link>
               {/* <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                Dank memes <--- Dankest Memes
               </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>

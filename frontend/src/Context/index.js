@@ -30,6 +30,7 @@ export default function Contexts({ children }) {
 
             if (response.data.id) {
                 setToken(response.data.id)
+                return(bearerToken)
             } else {
                 setToken("")
             }
