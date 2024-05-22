@@ -5,6 +5,8 @@ import { toast } from "react-toastify"
 
 //agora que percebi, o que a Camila programou tem sempre ";" no final.... maluca
 
+//Erro na hora de usar Post, error 400
+
 import "./conta.css"
 import { CiUser } from "react-icons/ci";
 import { IoLockClosedOutline } from "react-icons/io5";
