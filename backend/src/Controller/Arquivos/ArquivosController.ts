@@ -9,6 +9,8 @@ class ArquivosController {
     } else {
       const { filename: banner } = req.file;
 
+      console.log(nome, data, descricao)
+
       const arquivosServices = new ArquivosServices();
       const resposta = await arquivosServices.criarEvento({
         nome,

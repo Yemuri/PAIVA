@@ -8,51 +8,61 @@ import { toast } from "react-toastify"
 import "./conta.css"
 import { CiUser } from "react-icons/ci";
 import { IoLockClosedOutline } from "react-icons/io5";
-import { GiBangingGavel, GiArmorPunch } from "react-icons/gi"  
+import { GiBangingGavel, GiArmorPunch } from "react-icons/gi"
 import apiLocal from "../../APIs/APILocal"
 
 export default function PrestacaoConta() {
 
     const navigation = useNavigate()
 
-    const {VerifyToken} = useContext(AuthContext)
+    const { VerifyToken } = useContext(AuthContext)
 
     const [nome, setNome] = useState("")
     const [data, setData] = useState("")
     const [desc, setDesc] = useState("")
-    const [banner, setBanner] = useState("")
+    const [file, setBanner] = useState("")
 
     const [token, setToken] = useState("")
 
-    useEffect(()=>{
-        const getToken = VerifyToken()
-        setToken(getToken)
-    },[])
+    useEffect(() => {
+        VerifyToken()
+        const lsToken = localStorage.getItem("@LoginPaiva")
+        const stToken = JSON.parse(lsToken)
+        const bearer = stToken.token
+        setToken(bearer)
+    }, [])
 
-    async function handleConta(e){
+    async function handleConta(e) {
         e.preventDefault(e)
         try {
-            const response = await apiLocal.post("/criar-evento", {
-                nome, data, desc, banner
-            }, {
+
+            const data = new FormData()
+
+            data.append("nome", nome)
+            data.append("data", data)
+            data.append("descricao", desc)
+            data.append("file", file)
+
+            const response = await apiLocal.post("/criar-balancete", data, {
                 headers: {
                     Authorization: "Bearer " + `${token}`
                 }
             })
 
             toast.success(response.data.dados)
-        } catch(err) {
+        } catch (err) {
             toast.error(err)
             return
         }
     }
 
-    async function handlePdf(e){
+    async function handlePdf(e) {
         if (!e.target.files) {
             alert("Arquivo faltando")
             return
         }
 
+        console.log(e.target.files[0])
         const pdf = e.target.files[0]
         if (pdf.type === "pdf/.pdf/word/.word") {
             setBanner(pdf)
@@ -104,7 +114,7 @@ export default function PrestacaoConta() {
                                         </i>
                                     </span>
                                     <input
-                                        type="month"
+                                        type="date"
                                         placeholder="desc"
                                         className="input-texto"
                                         value={data}
@@ -117,7 +127,7 @@ export default function PrestacaoConta() {
                                         accept="pdf/.pdf/word/.word"
                                         placeholder="banner"
                                         className="input-texto"
-                                        value={banner}
+                                        value={file}
                                         onChange={handlePdf}
                                     />
                                     <span className="circle">

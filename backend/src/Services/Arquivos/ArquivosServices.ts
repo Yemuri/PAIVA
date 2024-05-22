@@ -18,6 +18,9 @@ class ArquivosServices {
     if (!nome || !data || !banner) {
       throw new Error("Existem campos em branco");
     }
+    
+    console.log(nome, data, descricao, banner)
+    
     await prismaClient.evento.create({
       data: {
         nome: nome,
