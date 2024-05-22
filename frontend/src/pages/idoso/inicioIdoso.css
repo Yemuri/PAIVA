@@ -1,0 +1,67 @@
+.cont-geral-idoso {
+  margin: 0px !important;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: fit-content;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 10px 0 10px 20px;
+  background-image: url("../../images/fundo-idoso.png");
+  background-repeat: round;
+  background-size: contain;
+}
+
+.cont-logo img {
+  width: 10rem;
+  /* border: solid red 1px; */
+}
+
+.cont-logo {
+  display: flex;
+  /* border: solid 2px blue; */
+  height: 100px;
+  justify-content: start;
+}
+
+.mapa {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  min-width: fit-content;
+  align-items: center;
+  /* border: solid red 2px; */
+}
+.mapa iframe {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.endereco {
+  justify-content: center;
+  text-align: center;
+  margin-top: 0.5rem;
+  width: 90%;
+  /* border: red solid 2px; */
+}
+
+.endereco .rua {
+  font-weight: bolder;
+  border: solid blue 2px;
+}
+
+.cont-logo h1 {
+  align-content: center;
+  margin-left: 25vw;
+}
+
+.container-geral-1 {
+  display: flex;
+  justify-content: bet;
+  margin: 1rem 0 0 2rem;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+.container-geral-2 h2 {
+  text-align: center;
+}
