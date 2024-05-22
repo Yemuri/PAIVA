@@ -5,7 +5,6 @@ import InicioLeite from "./leite/inicio/inicioLeite";
 import Navegacao from "../component/nav/navegacao";
 import InicioCrianca from "./crianca/inicioCrianca";
 import Idoso from "./idoso/inicioIdoso";
-import Footer from "../component/footer/footer";
 import InicioEquipe from "./equipe/inicioEquipe";
 
 export default function Rotas() {
@@ -22,7 +21,6 @@ export default function Rotas() {
           <Route path="/equipe" element={<InicioEquipe />} />
 
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
