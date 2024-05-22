@@ -1,7 +1,7 @@
 .container-geral {
     width: 100%;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     overflow-x: hidden;
     flex-direction: column;
@@ -124,7 +124,7 @@
 
 .fecharmodals {
     display: flex;
-    position: fixed;
+    position: relative;
     bottom: 904;
     right: 44;
 }
