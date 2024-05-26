@@ -5,14 +5,17 @@ import Modal from 'react-modal'
 import { useState } from 'react'
 
 
+// import Img from 'react-image'
+import logo from "../../images/unisagrado-transparente-cor.png"
+import logo2 from "../../images/extensao.png"
+import logo3 from "../../images/unisagrado-jpg-alta-01.jpg"
+
+
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaGoogle } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { FaRegArrowAltCircleUp } from "react-icons/fa";
-
-
 
 export default function Footer() {
 
@@ -27,55 +30,54 @@ export default function Footer() {
     }
 
     return (
-        <div>
-            <div className="container-geral">
-                <div className='colunas'>
-                    <div className='row-footer'>
-                        <h3>Navegação</h3>
-                        <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/">Casa do Leite</Link></li>
-                            <li><Link to="/">Casa da Criança</Link></li>
-                            <li><Link to="/">Abrigo de Idosos</Link></li>
-                        </ul>
-                    </div>
-                    <div className='contact'>
-                        <h3>Contato</h3>
-                        <div className='container_icones'>
-                            <span className='icon_contact'><Link to=''><FaInstagramSquare /></Link></span>
-                            <span className='icon_contact'><Link to=''><FaFacebook /></Link></span>
-                            <span className='icon_contact'><Link to=''><MdEmail /></Link></span>
-                            <span className='icon_contact'><Link to=''><FaGoogle /></Link></span>
-                            <span className='icon_contact'><Link to=''><BsFillTelephoneFill /></Link></span>
-                        </div>
-                            <h6 >Copyright</h6>
-                    </div>
-                    <div className='devpor'>
-                        <h6>Desenvolvido por <a onClick={abrirModal} className='fabrica-software'> Fábrica de Software</a></h6>
-                    </div>
-                        <Modal isOpen={modalAberto} onRequestClose={fecharModal} className='container-desenvolvedores'>
-                            <div className='container-texto'>
-                            <h3>Desenvolvedores:</h3>
-
-                                <a href='mailto: camispeereira@gmail.com'> <p>Bruna</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Camila</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Eduardo</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Fernando</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Karol</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Kaua</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Thais</p></a>
-                                <a href='mailto: email@gmail.com'> <p>Yemuri</p></a>
-                            </div>
-                            
-                        </Modal>
+        <div className="container-geral">
+            <div className='colunas'>
+                <div className='row-footer'>
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/casa-do-leite">Casa do Leite</Link></li>
+                        <li><Link to="/casa-da-crianca">Casa da Criança</Link></li>
+                        <li><Link to="/abrigo-idosos">Abrigo de Idosos</Link></li>
+                    </ul>
                 </div>
+                <div className='contact'>
+                    <h3>Contatos</h3>
+                    <div className='container_icones'>
+                        <span className='icon_contact'><Link to=''><FaInstagramSquare /></Link></span>
+                        <span className='icon_contact'><Link to=''><FaFacebook /></Link></span>
+                        <span className='icon_contact'><Link to=''><MdEmail /></Link></span>
+                        <span className='icon_contact'><Link to=''><FaGoogle /></Link></span>
+                        <span className='icon_contact'><Link to=''><BsFillTelephoneFill /></Link></span>
+                    </div>
+                    <h6 >Copyright © 2024</h6>
+                </div>
+                <div className='devpor'>
+                    <h6>Desenvolvido por <a onClick={abrirModal} className='fabrica-software'> Fábrica de Software</a></h6>
+                </div>
+                <Modal isOpen={modalAberto} onRequestClose={fecharModal} className='container-modal'>
+                    <div className='desenvolvedores'>
+                        <h3>Desenvolvedores:</h3>
 
+                        <a href='mailto: bruna.raissa2003@gmail.com'> <p>Bruna Raissa Correa Moura</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Camila Pereira Raimundo</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Eduardo Coque Corrêa de Lima</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Fernando Eduardo Motta Mendes</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Karoliny Bazan Silva</p></a>
+                        <a href='mailto: kaualimaonunes@gmail.com'> <p>Kauã Limão Nunes</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Thais Carolina Henrique</p></a>
+                        <a href='mailto: yemuruwt@gmail.com'> <p>Yemuri Wanderlei Teodoro</p></a>
+                        <a href='mailto: email@gmail.com'> <p>Lívia</p></a>
+                    </div>
+
+                    <div className='logo'>
+                        <h3>Parceiria com:</h3>
+                        <h5>Projeto de Extensão - Fábrica de Softwares</h5>
+                        <Link to='https://unisagrado.edu.br/site/conteudo/11184-fabrica-de-software-desenvolvimento-de-websi.html'><img width='60%' src={logo2} /></Link>
+                        <Link to='https://unisagrado.edu.br'><img width='100%' src={logo3} /></Link>
+                    </div>
+                </Modal>
             </div>
-
-
-
-
-        </div > // container geral
-
+        </div>
     )
 }
