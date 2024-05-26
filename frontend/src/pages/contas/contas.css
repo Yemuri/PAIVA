@@ -37,13 +37,13 @@
 .title_contas{
     font-size: 45px;
     text-align: center;
-    backdrop-filter: blur(10px);
 }
 
 .card-pdf{
     border-radius: 0 20px 0 20px;
     text-align: center;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    background-color: rgba(245, 245, 220, 0.841);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
 
     flex: 1 1 calc(25% - 32px); /* define que cada card deve ocupar aproximadamente 25% do contêiner, ajustando-se com a margem*/
