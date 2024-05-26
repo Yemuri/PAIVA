@@ -4,13 +4,9 @@ import Mapa from "./mapa";
 export default function Idoso() {
   return (
     <div className="cont-geral-idoso">
-      <header>
-        <div className="cont-logo">
-          <img src={logoIdoso} alt="" />
-          <h1>Abrigo para Idosos</h1>
-        </div>
-      </header>
-      <section className="container-geral-1">
+      
+      <div className="container-geral-1">
+        <img src={logoIdoso} alt="" />
         <p>
           Fundada na cidade de Bauru/SP pelo Sr. Sebastião Paiva, em 01 de
           janeiro de 1946, por tempo indeterminado, sem fins lucrativos é uma
@@ -28,11 +24,10 @@ export default function Idoso() {
           artigo 2º da Lei 8.842, de 04 de Janeiro de 1994 (Política Nacional do
           Idoso).
         </p>
-      </section>
-      <section className="container-geral-2">
-        <h2>Onde estamos</h2>
+      </div>
+      <div className="container-geral-2">
         <Mapa />
-      </section>
+      </div>
     </div>
   );
 }
