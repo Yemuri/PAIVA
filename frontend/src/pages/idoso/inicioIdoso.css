@@ -1,0 +1,41 @@
+.cont-geral-idoso {
+  margin: 0px !important;
+  background-image: url("../../images/fundo-idoso.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.container-geral-1 {
+  display: flex;
+  width: 95%;
+  align-items: center;
+}
+
+.container-geral-1 p{
+  text-align: justify;
+  letter-spacing: 2px;
+  word-break: break-all;
+}
+
+.container-geral-2{
+  width: 95%;
+}
+
+.mapa {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  align-items: center;
+}
+
+.endereco {
+  width: 50%;
+}
+
+.iframe-mapa{
+  width: 50%;
+}
