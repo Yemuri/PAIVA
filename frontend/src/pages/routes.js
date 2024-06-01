@@ -6,6 +6,7 @@ import Navegacao from "../component/nav/navegacao";
 import InicioCrianca from "./crianca/inicioCrianca";
 import Idoso from "./idoso/inicioIdoso";
 import InicioEquipe from "./equipe/inicioEquipe";
+import Footer from "../component/footer/footer";
 
 export default function Rotas() {
   return (
@@ -22,6 +23,7 @@ export default function Rotas() {
           {/* <Route path="/casa-da-crianca" element={<InicioCrianca />} /> */}
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

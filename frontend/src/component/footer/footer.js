@@ -38,7 +38,7 @@ export default function Footer() {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/casa-do-leite">Casa do Leite</Link></li>
                         <li><Link to="/casa-da-crianca">Casa da Criança</Link></li>
-                        <li><Link to="/abrigo-idosos">Abrigo de Idosos</Link></li>
+                        <li><Link to="/abrigo-para-idosos">Abrigo de Idosos</Link></li>
                     </ul>
                 </div>
                 <div className='contact'>
@@ -71,10 +71,10 @@ export default function Footer() {
                     </div>
 
                     <div className='logo'>
-                        <h3>Parceiria com:</h3>
+                        <h3>Parceria com:</h3>
                         <h5>Projeto de Extensão - Fábrica de Softwares</h5>
-                        <Link to='https://unisagrado.edu.br/site/conteudo/11184-fabrica-de-software-desenvolvimento-de-websi.html'><img width='60%' src={logo2} /></Link>
-                        <Link to='https://unisagrado.edu.br'><img width='100%' src={logo3} /></Link>
+                        <Link to='https://unisagrado.edu.br/site/conteudo/11184-fabrica-de-software-desenvolvimento-de-websi.html'><img width='60%' className='imagem1' src={logo2} /></Link>
+                        <Link to='https://unisagrado.edu.br'><img width='100%'className='imagem1' src={logo3} /></Link>
                     </div>
                 </Modal>
             </div>

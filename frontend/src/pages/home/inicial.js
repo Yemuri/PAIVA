@@ -37,7 +37,7 @@ export default function Inicial() {
           <h3>Abrigo para Idosos</h3>
           <p>Abrigo para Idosos Paiva, também conhecido como "Casa do Idoso Paiva", é um serviço da Sociedade Beneficente Cristã (SBC), uma organização sem fins lucrativos localizada em Bauru, São Paulo. Fundada em 1950, a SBC atua há mais de 70 anos na comunidade, oferecendo diversos serviços sociais, incluindo o Abrigo para Idosos.</p>
           <div className="botao-container">
-            <button onClick={() => nav('/abrigo-idosos')}>Saiba mais</button>
+            <button onClick={() => nav('/abrigo-para-idosos')}>Saiba mais</button>
           </div>
         </div>
         

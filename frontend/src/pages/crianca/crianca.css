@@ -264,10 +264,6 @@
 } */
 
 
-    display: flex;
-    align-items: center;
-}
-
 .container-p-direita p{
     align-content: center;
     box-shadow: 7px 7px 15px 2px #a67d624f;
@@ -310,7 +306,7 @@
     border-top: solid #866752bf 3px;
     border-left: solid #866752bf 1px;
 
-} */
+} 
 
 /* .container-geral-crianca p {
     text-align: justify;
