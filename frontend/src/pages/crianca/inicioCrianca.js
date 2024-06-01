@@ -22,6 +22,7 @@ export default function InicioCrianca() {
                 </header>
             </div>
 
+
             <div className='content-crianca'>
                 <div className="container-p">
                     <p>
@@ -62,6 +63,7 @@ export default function InicioCrianca() {
                         <p><MdAlternateEmail /> insta_casa_crianca</p>
                         <p><FaFacebook /> face_casa_crianca</p>
                     </div>
+
                 </div>
             </div>
         </div>
