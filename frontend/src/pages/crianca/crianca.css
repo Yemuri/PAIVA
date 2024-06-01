@@ -4,10 +4,16 @@
     width: 100vw;
     background-image: url('../../images/fundo-crianca-removebg.png');
     background-size: contain;
-    max-width: fit-content;
-    height: 100vh;
-    margin: 10px 0 10px 20px;
-    height: fit-content;
+
+    overflow-x: hidden;
+}
+
+.content-crianca{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
 }
 
 .container-logo {
@@ -21,13 +27,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 1%;
+
 }
 
 .container-logo img {
     width: 20rem;
     background-color: #ffe8dc21;
-    margin-right: 5rem;
-    margin-bottom: 2rem;
+
+    margin: 2%;
+    
+
     box-shadow: 5px 6px 10px 2px #ffe8dc;
 }
 
@@ -41,16 +52,93 @@
     font-weight: bold;
     font-family: "Josefin Sans", sans-serif;
     font-size: 3rem;
+
 }
 
-.container-geral-crianca p {
+.container-p{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 1%;
+
+}
+
+.container-p p{
+    align-content: center;
+    box-shadow: 7px 7px 15px 2px #a67d624f;
+    padding: .5rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.589);
+    height: fit-content;
+    border-bottom: solid #866752bf 3px;
+    border-right: solid #866752bf 1px;
+    border-radius: 0 20px;
+    
     text-align: justify;
     margin: .5rem 2rem .5rem 2rem;
     background-color: rgba(255, 255, 255, 0.589);
     letter-spacing: 1px;
+
 }
 
-.container-p-direita {
+.container-p > img{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.contact-maps{
+    display: flex;
+    padding: 2%;
+    width: 95%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.contact{
+    padding: 3%;    
+    background-color: #ffe8dcba;
+    margin: 1%;
+}
+
+/* .contact  */
+
+
+/* .container-p-direita3{
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 5%;
+    margin-left: .4rem;
+    
+}
+
+.container-p-direita3 p{
+    align-content: center;
+    box-shadow: 8px -7px 10px 2px rgba(166, 125, 98, 0.308);
+    padding: .5rem;
+    font-weight: 600;
+    width: 42.8%;
+    background-color: rgba(255, 255, 255, 0.589);
+    height: fit-content;
+    border-top: solid #866752bf 3px;
+    border-right: solid #866752bf 1px;
+    
+}
+
+.container-p-direita3 img {
+    width: 40%;
+    margin-left: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+} */
+
+
+/* .cont-geral{
+    width:fit-content;
+    height: fit-content;
+    margin-left: 3%;
+} */
+
+
     display: flex;
     align-items: center;
 }
@@ -96,40 +184,25 @@
     height: fit-content;
     border-top: solid #866752bf 3px;
     border-left: solid #866752bf 1px;
-}
 
+} */
 
-/* .container-p-direita3{
-    display: flex;
-    margin-top: 2rem;
-    margin-right: 5%;
-    margin-left: .4rem;
-    
-}
-
-.container-p-direita3 p{
-    align-content: center;
-    box-shadow: 8px -7px 10px 2px rgba(166, 125, 98, 0.308);
-    padding: .5rem;
-    font-weight: 600;
-    width: 42.8%;
+/* .container-geral-crianca p {
+    text-align: justify;
+    margin: .5rem 2rem .5rem 2rem;
     background-color: rgba(255, 255, 255, 0.589);
-    height: fit-content;
-    border-top: solid #866752bf 3px;
-    border-right: solid #866752bf 1px;
-
-}
-
-.container-p-direita3 img {
-    width: 40%;
-    margin-left: 5%;
-    margin-left: 5%;
-    border-radius: 20px;
+    letter-spacing: 1px;
 } */
+    /* height: 100vh; */
+    /* max-width: fit-content; */
+    /* margin: 10px 0 10px 20px; */
+    /* height: fit-content; */
+    /* margin: 0; */
+    /* overflow-y: hidden; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* padding: 3; */
+/* margin-right: 5rem;
+margin-bottom: 2rem; */
 
-
-/* .cont-geral{
-    width:fit-content;
-    height: fit-content;
-    margin-left: 3%;
-} */
