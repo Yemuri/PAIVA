@@ -60,14 +60,14 @@ export default function Footer() {
                         <h3>Desenvolvedores:</h3>
 
                         <a href='mailto: bruna.raissa2003@gmail.com'> <p>Bruna Raissa Correa Moura</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Camila Pereira Raimundo</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Eduardo Coque Corrêa de Lima</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Fernando Eduardo Motta Mendes</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Karoliny Bazan Silva</p></a>
+                        <a href='mailto: camilaapereira.r@gmail.com'> <p>Camila Pereira Raimundo</p></a>
+                        <a href='mailto: Leduardocoque@gmail.com'> <p>Eduardo Coque Corrêa de Lima</p></a>
+                        <a href='mailto: fernandoemmendes@gmail.com'> <p>Fernando Eduardo Motta Mendes</p></a>
+                        <a href='mailto: karolinys766@gmail.com'> <p>Karoliny Bazan Silva</p></a>
+                        <a href='mailto: liviabc.@gmail.com'> <p>Livia Barros Carvalho D'Avila</p></a>
                         <a href='mailto: kaualimaonunes@gmail.com'> <p>Kauã Limão Nunes</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Thais Carolina Henrique</p></a>
+                        <a href='mailto: thais.carolina.henrique@gmail.com'> <p>Thais Carolina Henrique</p></a>
                         <a href='mailto: yemuruwt@gmail.com'> <p>Yemuri Wanderlei Teodoro</p></a>
-                        <a href='mailto: email@gmail.com'> <p>Lívia</p></a>
                     </div>
 
                     <div className='logo'>

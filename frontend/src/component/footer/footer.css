@@ -26,11 +26,11 @@ box-shadow: 8px 5px 12px rgb(148, 78, 46);
     list-style-type: none;
 }
 
-.contact {
+/* .contact {
     min-width: 20%;
     border: solid 1px white;
     padding-bottom: 25px;
-}
+} */
 
 .contact h6 {
     display: flex;
