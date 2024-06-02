@@ -1,10 +1,9 @@
 import './crianca.css'
-import LogoCrianca from '../../images/logosembg.png'
+import CarrosselCrianca from './carroselCrianca'
 
-// import imgRaci1 from '../../images/imgraci1.jpg'
+import LogoCrianca from '../../images/logosembg.png'
 import imgRaci2 from '../../images/imgraci2.jpg'
 import img3 from '../../images/img3.jpg'
-import CarrosselCrianca from './carroselCrianca'
 import { FaPhone } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";

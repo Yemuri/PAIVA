@@ -22,7 +22,7 @@ export default function Navegacao() {
               <NavDropdown title="Nossos Projetos" id="collapsible-nav-dropdown" className="item-h">
                 <NavDropdown.Item className="item-nav-h2"><Link to='/casa-do-leite'>Casa do Leite</Link></NavDropdown.Item>
                 <NavDropdown.Item className="item-nav-h2"><Link to='/casa-da-crianca'>Casa da Criança</Link></NavDropdown.Item>
-                <NavDropdown.Item><Link to='/abrigo-idosos' className="item-nav-h2">Abrigo de Idosos</Link></NavDropdown.Item>
+                <NavDropdown.Item className="item-nav-h2"><Link to='/abrigo-de-idosos' >Abrigo de Idosos</Link></NavDropdown.Item>
                 {/* <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Opção teste

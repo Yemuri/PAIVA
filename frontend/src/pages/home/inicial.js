@@ -1,25 +1,16 @@
 import { useNavigate } from "react-router-dom";
-import home from "./home.css";
+import "./home.css";
+
 
 export default function Inicial() {
   const nav = useNavigate();
 
   return (
     <div className="geral-home">
-      <div>
-      </div>
       <div className="container-projetos">
         <div className="projeto">
           <h3>Casa do Leite</h3>
-          <p>
-            A Casa do Leite, parte da Fundação Espírita "Sebastião Paiva" em
-            Bauru, é uma entidade filantrópica que oferece assistência social a
-            famílias de baixa renda. Desde 2007, a fundação realiza visitas
-            domiciliares, distribui gêneros alimentícios e oferece cursos
-            gratuitos em áreas como informática, estética e artesanato. O
-            objetivo é inserir essas famílias no mercado de trabalho, melhorando
-            sua autoestima e cidadania.
-          </p>
+          <p>A Casa do Leite, parte da Fundação Espírita "Sebastião Paiva" em Bauru, é uma entidade filantrópica que oferece assistência social a famílias de baixa renda. Desde 2007, a fundação realiza visitas domiciliares, distribui gêneros alimentícios e oferece cursos gratuitos em áreas como informática, estética e artesanato. O objetivo é inserir essas famílias no mercado de trabalho, melhorando sua autoestima e cidadania.</p>
           <div className="botao-container"> {/* Novo container para o botão */}
             <button onClick={() => nav('/casa-do-leite')}>Saiba mais</button>
           </div>
@@ -40,7 +31,6 @@ export default function Inicial() {
             <button onClick={() => nav('/abrigo-idosos')}>Saiba mais</button>
           </div>
         </div>
-        
       </div>
     </div>
   );

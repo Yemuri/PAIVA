@@ -17,7 +17,7 @@ export default function Rotas() {
           <Route path="/login" element={<Login />} />
           <Route path="/casa-do-leite" element={<InicioLeite />} />
           <Route path="/casa-da-crianca" element={<InicioCrianca />} />
-          <Route path="/abrigo-para-idosos" element={<Idoso />} />
+          <Route path="/abrigo-de-idosos" element={<Idoso />} />
           <Route path="/equipe" element={<InicioEquipe />} />
 
         </Routes>

@@ -1,4 +1,6 @@
 import "./inicioIdoso.css";
+import CarrosselIdoso from "./carrosselidoso";
+
 import logoIdoso from "../../images/logo-idosos-2.png";
 import Mapa from "./mapa";
 export default function Idoso() {
@@ -25,6 +27,7 @@ export default function Idoso() {
           Idoso).
         </p>
       </div>
+      <CarrosselIdoso /> 
       <div className="container-geral-2">
         <Mapa />
       </div>
