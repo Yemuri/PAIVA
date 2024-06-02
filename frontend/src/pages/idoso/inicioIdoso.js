@@ -27,9 +27,9 @@ export default function Idoso() {
           Idoso).
         </p>
       </div>
-      <CarrosselIdoso /> 
-      <div className="container-geral-2">
+      <div className="carrossel-maps">
         <Mapa />
+        <CarrosselIdoso /> 
       </div>
     </div>
   );

@@ -1,21 +1,21 @@
 import Carousel from 'react-bootstrap/Carousel'
-import Img1 from '../../images/1.jpeg'
-import Img2 from '../../images/2.jpeg'
-import Img3 from '../../images/3.jpeg'
-import Img4 from '../../images/4.jpeg'
-import Img5 from '../../images/5.jpeg'
-import Img6 from '../../images/6.jpeg'
-import Img7 from '../../images/7.jpeg'
-import Img8 from '../../images/8.jpeg'
-import Img9 from '../../images/9.jpeg'
-import Img10 from '../../images/10.jpeg'
-import Img11 from '../../images/11.jpeg'
-import Img12 from '../../images/12.jpeg'
-import Img13 from '../../images/13.jpeg'
-import Img14 from '../../images/14.jpeg'
-import Img15 from '../../images/15.jpeg'
+import Img1 from '../../images/1.png'
+import Img2 from '../../images/2.png'
+import Img3 from '../../images/3.png'
+import Img4 from '../../images/4.png'
+import Img5 from '../../images/5.png'
+import Img6 from '../../images/6.png'
+import Img7 from '../../images/7.png'
+import Img8 from '../../images/8.png'
+import Img9 from '../../images/9.png'
+import Img10 from '../../images/10.png'
+import Img11 from '../../images/11.png'
+import Img12 from '../../images/12.png'
+import Img13 from '../../images/13.png'
+import Img14 from '../../images/14.png'
+import Img15 from '../../images/15.png'
 
-import "./inicioIdoso.css";
+import "./carrosselIdoso.css";
 export default function CarrosselIdoso() {
     return(
         <div className="carrosselIdoso">
