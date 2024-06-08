@@ -1,3 +1,148 @@
-.GERAL {
-background: blue;
+*{
+    margin: 0 !important;
+
 }
+#rosa{
+    background-color: #FA0644;
+}
+
+#verde{
+    background-color: #2f4f4f;
+}
+
+#roxo{
+    background-color: #800080;
+}
+
+#roxinho{
+    background-color: #AA02FF;
+}
+
+#azul{
+    background-color: #87ceeb;
+}
+
+#amarelo{
+    background-color: #ffd700;
+}
+
+#laranja{
+    background-color: #FA5300;
+}
+
+
+
+.geral {
+    background: #E0E1DF;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.25) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%; 
+    width: 100%;
+}
+
+.logo h1{
+    padding: 2%;
+}
+
+.logo img{
+    width: 10%;
+}
+
+.caixinhas{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; /* permitir que os cards possam ir para a próxima linha quando não houver espaço suficiente. */
+    gap: 16px;
+    justify-content: center;
+}
+
+.caixa{
+    flex: 1 1 calc(25% - 32px); 
+    max-width: calc(25% - 32px); 
+
+    height: auto;
+    padding: 80px 50px 20px 20px;
+
+
+    border-radius: 20px;
+    color: aliceblue;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caixaimg{
+    flex: 1 1 calc(25% - 32px); 
+    max-width: calc(25% - 32px); 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    /* padding: 80px 50px 20px 20px; */
+
+
+    border-radius: 20px;
+    color: aliceblue;
+
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.caixaimg img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.caixateste{
+    flex: 1 1 calc(25% - 32px); 
+    max-width: calc(25% - 32px); 
+
+    height: auto;
+    
+    
+    
+    border-radius: 20px;
+    color: aliceblue;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.caixateste p{
+    padding: 10px 50px 20px 20px;
+}
+
+.icon-leite{
+    padding: 5%;
+    text-align: end;
+    font-size: 30px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .caixa {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+}
+
+@media (max-width: 480px) {
+    .caixa {
+        flex: 1 1 calc(100% - 32px);
+        max-width: calc(100% - 32px);
+    }
+}
+
+
