@@ -8,4 +8,9 @@ export default function InicioLeite() {
     </div>
   );
 }
-
+{
+ <section>
+  <h1>Sobre a casa do Leite</h1>
+  <p1>texto..</p1>
+ </section> 
+} 
