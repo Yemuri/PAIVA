@@ -89,8 +89,7 @@ export default function Footer() {
         <Modal
           isOpen={modalAberto}
           onRequestClose={fecharModal}
-          className="container-modal"
-        >
+          className="container-modal">
           <div className="desenvolvedores">
             <h3>Desenvolvedores:</h3>
 
