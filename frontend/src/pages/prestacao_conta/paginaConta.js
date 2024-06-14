@@ -21,7 +21,6 @@ export default function PrestacaoConta() {
 
     const [nome, setNome] = useState("")
     const [data, setData] = useState("")
-    const [desc, setDesc] = useState("")
     const [file, setBanner] = useState("")
 
     const [token, setToken] = useState("")
@@ -51,7 +50,7 @@ export default function PrestacaoConta() {
         e.preventDefault(e)
         try {
 
-            if (!nome || !data || !desc || !file) {
+            if (!nome || !data || !file) {
                 toast.error("Por favor, preencha todos os campos.");
                 return;
             }
@@ -59,8 +58,7 @@ export default function PrestacaoConta() {
             const dataForm = new FormData()
 
             dataForm.append("nome", nome)
-            dataForm.append("data", data)
-            dataForm.append("descricao", desc)
+            dataForm.append("ano", data)
             dataForm.append("file", file)
 
             // for (let pair of dataForm.entries()) {
@@ -106,20 +104,6 @@ export default function PrestacaoConta() {
                                     />
                                 </div>
                                 <div className="input_login">
-                                    <input
-                                        type="password"
-                                        placeholder="Desc"
-                                        className="input-texto"
-                                        value={desc}
-                                        onChange={(e) => setDesc(e.target.value)}
-                                    />
-                                    <span className="circle">
-                                        <i className="fa-solid fa-lock">
-                                            <IoLockClosedOutline />
-                                        </i>
-                                    </span>
-                                </div>
-                                <div className="input_login">
                                     <span className="circle">
                                         <i className="fa-solid fa-lock">
                                             <GiArmorPunch />
@@ -134,6 +118,11 @@ export default function PrestacaoConta() {
                                     />
                                 </div>
                                 <div className="input_login">
+                                    <span className="circle">
+                                        <i className="fa-solid fa-lock">
+                                            <GiBangingGavel />
+                                        </i>
+                                    </span>
                                     <input
                                         type="file"
                                         accept=".pdf,.doc,.docx"
@@ -141,11 +130,6 @@ export default function PrestacaoConta() {
                                         className="input-texto"
                                         onChange={handlePdf}
                                     />
-                                    <span className="circle">
-                                        <i className="fa-solid fa-lock">
-                                            <GiBangingGavel />
-                                        </i>
-                                    </span>
                                 </div>
                                 <div className="input_login">
                                     <button type="submit">Entrar</button>
