@@ -19,8 +19,8 @@ router.post(
 
 router.post(
   "/criar-balancete",
-  upload.single("file"),
   isAuth,
+  upload.single("file"),
   new ArquivosController().criacaoBalancete
 );
 //USUARIO
