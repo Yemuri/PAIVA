@@ -34,18 +34,40 @@ export default function PrestacaoConta() {
         setToken(bearer)
     }, [])
 
+    async function handlePdf(e) {
+        if (!e.target.files) {
+            alert("Arquivo faltando");
+            return;
+        }
+
+        console.log(e.target.files[0])
+        const pdf = e.target.files[0]
+        if (pdf.type === "application/pdf" || pdf.type === "application/msword") {
+            setBanner(pdf)
+        }
+    }
+
     async function handleConta(e) {
         e.preventDefault(e)
         try {
 
-            const data = new FormData()
+            if (!nome || !data || !desc || !file) {
+                toast.error("Por favor, preencha todos os campos.");
+                return;
+            }
 
-            data.append("nome", nome)
-            data.append("data", data)
-            data.append("descricao", desc)
-            data.append("file", file)
+            const dataForm = new FormData()
 
-            const response = await apiLocal.post("/criar-balancete", data, {
+            dataForm.append("nome", nome)
+            dataForm.append("data", data)
+            dataForm.append("descricao", desc)
+            dataForm.append("file", file)
+
+            // for (let pair of dataForm.entries()) {
+            //     console.log(pair[0] + ', ' + pair[1]);
+            // }
+
+            const response = await apiLocal.post("/criar-balancete", dataForm, {
                 headers: {
                     Authorization: "Bearer " + `${token}`
                 }
@@ -58,18 +80,6 @@ export default function PrestacaoConta() {
         }
     }
 
-    async function handlePdf(e) {
-        if (!e.target.files) {
-            alert("Arquivo faltando")
-            return
-        }
-
-        console.log(e.target.files[0])
-        const pdf = e.target.files[0]
-        if (pdf.type === "pdf/.pdf/word/.word") {
-            setBanner(pdf)
-        }
-    }
 
     return (
         <div className="bodyLogin">
@@ -98,7 +108,7 @@ export default function PrestacaoConta() {
                                 <div className="input_login">
                                     <input
                                         type="password"
-                                        placeholder="data"
+                                        placeholder="Desc"
                                         className="input-texto"
                                         value={desc}
                                         onChange={(e) => setDesc(e.target.value)}
@@ -116,8 +126,8 @@ export default function PrestacaoConta() {
                                         </i>
                                     </span>
                                     <input
-                                        type="date"
-                                        placeholder="desc"
+                                        type="number"
+                                        placeholder="data"
                                         className="input-texto"
                                         value={data}
                                         onChange={(e) => setData(e.target.value)}
@@ -126,10 +136,9 @@ export default function PrestacaoConta() {
                                 <div className="input_login">
                                     <input
                                         type="file"
-                                        accept="pdf/.pdf/word/.word"
+                                        accept=".pdf,.doc,.docx"
                                         placeholder="banner"
                                         className="input-texto"
-                                        value={file}
                                         onChange={handlePdf}
                                     />
                                     <span className="circle">
