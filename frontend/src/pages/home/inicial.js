@@ -6,8 +6,6 @@ export default function Inicial() {
 
   return (
     <div className="geral-home">
-      <div>
-      </div>
       <div className="container-projetos">
         <div className="projeto">
           <h3>Casa do Leite</h3>
