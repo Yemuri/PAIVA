@@ -7,6 +7,7 @@ import InicioCrianca from "./crianca/inicioCrianca";
 import Idoso from "./idoso/inicioIdoso";
 import InicioEquipe from "./equipe/inicioEquipe";
 import Footer from "../component/footer/footer";
+import InicioContas from "./contas/inicioContas";
 
 export default function Rotas() {
   return (
@@ -20,8 +21,7 @@ export default function Rotas() {
           <Route path="/casa-da-crianca" element={<InicioCrianca />} />
           <Route path="/abrigo-para-idosos" element={<Idoso />} />
           <Route path="/equipe" element={<InicioEquipe />} />
-          {/* <Route path="/casa-da-crianca" element={<InicioCrianca />} /> */}
-
+          <Route path="/prestacao-de-contas" element={<InicioContas />} />
         </Routes>
         <Footer />
       </BrowserRouter>
