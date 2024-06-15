@@ -1,6 +1,7 @@
 .container_equipe{
     display: block;
     overflow-x: hidden;
+    padding: 20px;
 }
 
 .title_equipe{
@@ -19,7 +20,7 @@
 .info{
     text-align: center;
     border-radius: 0 15px 0 15px;
-    background-color: #673815b5;
+    background-color: #ddd5cd;
     width: 950px;
     margin: 1.5% 1%;
     padding: 2.3%;
@@ -30,20 +31,12 @@
 }
 
 .info > h2{
-    color: #fff;
     font-weight: bold;
-    padding: 0.5%;
     font-size: 3em;
 }
 
 .info > h4{
-    color: #fff;
     font-size: 1.5em;
-    padding: 1%;
-}
-
-.info > p{
-    color: #fff;
 }
 
 .foto > img{
