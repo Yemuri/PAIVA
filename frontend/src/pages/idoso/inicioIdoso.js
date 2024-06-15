@@ -32,7 +32,7 @@ export default function Idoso() {
         </p>
       </div>
       <section className="eventos">
-        <div className="evento laranja">
+        <div className="evento">
           <div className="img-evento">
             <img src={Teste}/>
           </div>
@@ -45,7 +45,7 @@ export default function Idoso() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
           </div> 
         </div>
-        <div className="evento roxo">
+        <div className="evento">
           <div className="img-evento">
             <img src={Teste}/>
           </div>
@@ -58,7 +58,7 @@ export default function Idoso() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
           </div> 
         </div>
-        <div className="evento rosa">
+        <div className="evento">
           <div className="img-evento">
             <img src={Teste}/>
           </div>
