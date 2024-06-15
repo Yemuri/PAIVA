@@ -1,9 +1,13 @@
 import "./inicioIdoso.css";
 import CarrosselIdoso from "./carrosselidoso";
-import Teste from "../../images/PAIVAwhats.png"
-
-import logoIdoso from "../../images/logo-idosos-2.png";
 import Mapa from "./mapa";
+
+import Teste from "../../images/PAIVAwhats.png"
+import logoIdoso from "../../images/logo-idosos-2.png";
+
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa6";
+
 export default function Idoso() {
   return (
     <div className="cont-geral-idoso">
