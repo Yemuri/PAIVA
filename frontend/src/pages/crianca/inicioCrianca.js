@@ -10,6 +10,10 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa6";
+
+import Teste from "../../images/PAIVAwhats.png"
 
 export default function InicioCrianca() {
   return (
@@ -22,6 +26,49 @@ export default function InicioCrianca() {
       </div>
 
       <div className="content-crianca">
+
+      <section className="eventos">
+        <div className="evento laranja">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+        <div className="evento roxo">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+        <div className="evento rosa">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+      </section>
+
         <div className="container-p">
           <p>
             A Associação de Proteção à Maternidade e à Criança (APMC), também
@@ -77,7 +124,7 @@ export default function InicioCrianca() {
               }}
             ></iframe>
           </div>
-          <div className="contact">
+          <div className="contato">
             <h3>Contato</h3>
             <p>
               <CiLocationOn /> Rua não sei onde
