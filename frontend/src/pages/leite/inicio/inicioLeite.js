@@ -1,7 +1,7 @@
 import "./leite.css"
 
 // IMAGENS
-import LogoLeite from "../../../images/logo-leite.png"
+import LogoLeite from "../../../images/logo-leite - Copia.png"
 import Croche from "../../../images/croche.jpg"
 import Study from "../../../images/study.jpg"
 import Books from "../../../images/books.jpg"
@@ -56,19 +56,6 @@ export default function InicioLeite() {
           </div> 
         </div>
         <div className="evento rosa">
-          <div className="img-evento">
-            <img src={Books}/>
-          </div>
-          <div className="descricao-evento">
-            <div className="infos">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
-            </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
-        <div className="evento verde">
           <div className="img-evento">
             <img src={Books}/>
           </div>

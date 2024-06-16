@@ -39,5 +39,8 @@
 
 .iframe-mapa{
   width: 50%;
+}
 
+.carousel-item{
+  float: none !important;
 }

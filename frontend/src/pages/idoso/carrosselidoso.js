@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
 
-import "./carrosselIdoso.css";
+import "./inicioIdoso.css";
 
 // IMAGENS
 import Img1 from '../../images/1.png'
