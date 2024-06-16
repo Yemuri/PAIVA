@@ -1,4 +1,5 @@
 import "./nav.css";
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -12,6 +13,7 @@ export default function Navegacao() {
     <div className="navegacao">
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container>
+
           <Navbar.Brand>
             <Link to="/" className="item-h">
               Fundação Sebastião Paiva
@@ -45,6 +47,7 @@ export default function Navegacao() {
                 <NavDropdown.Item className="item-nav-h2">
                   <Link to="/abrigo-de-idosos">Abrigo de Idosos</Link>
                 </NavDropdown.Item>
+
                 {/* <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Opção teste
@@ -52,11 +55,13 @@ export default function Navegacao() {
               </NavDropdown>
             </Nav>
             <Nav>
+
               <Nav.Link>
                 <Link to="/login" className="item-h">
                   <FaRegUserCircle /> Acesso Restrito
                 </Link>
               </Nav.Link>
+
               {/* <Nav.Link eventKey={2} href="#memes">
                 Dank memes
               </Nav.Link> */}
@@ -64,6 +69,8 @@ export default function Navegacao() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
     </div>
+
   );
 }

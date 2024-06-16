@@ -7,6 +7,7 @@ import './crianca.css'
 export default function CarrosselCrianca() {
     return (
         <div className='cont-geral'>
+
             <Carousel className='cont-items' slide={true}>
                 <Carousel.Item interval={8000}>
                     <img src={Image1} alt="" />
@@ -18,6 +19,7 @@ export default function CarrosselCrianca() {
                     <img src={Image3} alt="" />
                 </Carousel.Item>
             </Carousel>
+
         </div>
     );
 }

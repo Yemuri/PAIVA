@@ -1,77 +1,76 @@
 /* Estilos Gerais */
 body {
-  font-family: sans-serif;
-  margin: 0;
-}
+
+    font-family: sans-serif;
+    margin: 0;
+  }
   
-.geral-home {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo horizontalmente */
-  /* padding: 20px; */
-  background: rgb(245, 225, 174);
-}
+  .geral-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 20px;
+    background: rgb(245, 225, 174);
+    
   
-h1 {
-  color: #333; /* Cor de texto escura */
-  margin-bottom: 20px;
-}
+  }
   
-p {
-  line-height: 1.6; /* Espaçamento entre as linhas */
-  margin-bottom: 10px;
-}
+  h1 {
+    color: #333; /* Cor de texto escura */
+    margin-bottom: 20px;
+  }
   
-/* Seção de Projetos */
-.container-projetos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo: 1 ou 2 colunas */
-  gap: 20px; /* Espaçamento entre os projetos */
-  width: 80%; /* Largura máxima do container */
-  margin: 30px auto; /* Centraliza o container */
-}
+  p {
+    line-height: 1.6; /* Espaçamento entre as linhas */
+    margin-bottom: 10px;
+  }
   
+  /* Seção de Projetos */
+  .container-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo: 1 ou 2 colunas */
+    gap: 20px; /* Espaçamento entre os projetos */
+    width: 80%; /* Largura máxima do container */
+    margin: 30px auto; /* Centraliza o container */
+  }
+  
+  .projeto {
+    background-color: #fff; /* Fundo branco para os projetos */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .projeto h3 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  button:hover {
+    background-color: #45a049; 
+  }
+  
+
 .projeto {
-  background-color: #fff; /* Fundo branco para os projetos */
-  padding: 20px;
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
+   
+    display: flex; /* Ativa o flexbox no container do projeto */
+    flex-direction: column; /* Coloca o botão abaixo do parágrafo */  
+  }
   
-.projeto h3 {
-  color: #333;
-  margin-top: 0;
-}
-
-.projeto p{
-  text-align: justify;
-}
-  
-/* Botões */
-button {
-  background-color: #4CAF50; 
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
-  
-button:hover {
-  background-color: #45a049; 
-}
-
-.projeto {
-  
-  display: flex; /* Ativa o flexbox no container do projeto */
-  flex-direction: column; /* Coloca o botão abaixo do parágrafo */  
-}
-  
-.botao-container {
-  margin-top: 10px; /* Adiciona um espaçamento superior ao botão */
-}
-
+  .botao-container {
+    margin-top: 10px; /* Adiciona um espaçamento superior ao botão */
+  }
 
   
   

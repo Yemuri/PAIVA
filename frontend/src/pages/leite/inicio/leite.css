@@ -1,5 +1,154 @@
+
+*{
+    margin: 0 !important;
+
+}
+.rosa{
+    background-color: #FA0644;
+}
+
+.verde{
+    background-color: #2f4f4f;
+}
+
+.roxo{
+    background-color: #800080;
+}
+
+.roxinho{
+    background-color: #AA02FF;
+}
+
+.azul{
+    background-color: #87ceeb;
+}
+
+.amarelo{
+    background-color: #ffd700;
+}
+
+.laranja{
+    background-color: #FA5300;
+}
+
+.branco{
+    background-color: #f0f0f0;
+}
+
 .geral {
-    background: rgb(245, 225, 174);
-    height: 100vh;
+    background: #E0E1DF;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.25) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%; 
+    width: 100%;
+}
+
+.logo h1{
+    padding: 2%;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 8%;
+}
+
+.caixinhas{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
+.caixa{
+    border-radius: 20px;
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+.caixa p{
+    text-align: justify;
+}
+    
+.caixa img{
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}   
+
+#img{
+    box-shadow: none;
+    max-width: 30%;
+}
+
+#text{
+    padding: 2%;
+    color: #2f4f4f;
+    max-width: 67%;
+}
+
+#icon-text{
+    font-size: 2em;
+    padding: 0.5% 2% 3% 1%;
+}
+
+#cursos{
+    padding: 1.8%;
+    max-width: 23%;
+}
+
+#icon-cursos{
+    padding: 3%;
+    font-size: 3em;
+}
+
+.evento{
+    /* border: solid 3px red; */
+    width: 32.5%;
+    /* display: flex; */
+    border-radius: 10px;
+    /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+        /* background-color: #fa5300; */
+        /* background-image: linear-gradient(62deg, #fa5300 37%, #F7CE68 100%); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: aliceblue;
+}
+
+.evento:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.img-evento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.img-evento img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descricao-evento{
+    width: 100%;
+    padding: 3%;
+    text-align: justify;
+}
+
+.infos{
+    color: #f0f0f0b9;
+    margin-bottom: 3%;
 }
 
