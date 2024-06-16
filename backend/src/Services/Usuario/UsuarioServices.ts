@@ -72,6 +72,7 @@ class UsuarioServices {
     );
     return {
       id: usuario.id,
+      nome: usuario.nome,
       email: usuario.email,
       token: token,
     };

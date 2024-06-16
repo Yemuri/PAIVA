@@ -13,7 +13,6 @@ export default function Navegacao() {
     <div className="navegacao">
       <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
         <Container>
-
           <Navbar.Brand>
             <Link to="/" className="item-h">
               Fundação Sebastião Paiva
@@ -55,7 +54,6 @@ export default function Navegacao() {
               </NavDropdown>
             </Nav>
             <Nav>
-
               <Nav.Link>
                 <Link to="/login" className="item-h">
                   <FaRegUserCircle /> Acesso Restrito
@@ -63,14 +61,12 @@ export default function Navegacao() {
               </Nav.Link>
 
               {/* <Nav.Link eventKey={2} href="#memes">
-                Dank memes
+                Dank memes <--- Dankest Memes
               </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
     </div>
-
   );
 }

@@ -1,4 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../Context";
+
 import Inicial from "./home/inicial";
 import Login from "./login/paginaLogin";
 import InicioLeite from "./leite/inicio/inicioLeite";
@@ -10,11 +13,14 @@ import Footer from "../component/footer/footer";
 import InicioContas from "./contas/inicioContas";
 
 export default function Rotas() {
-  return (
+  const { authentication } = useContext(AuthContext);
+
+  return authentication === false ? (
     <div>
       <BrowserRouter>
         <Navegacao />
         <Routes>
+          <Route path="*" element={<Login />} />
           <Route path="/" element={<Inicial />} />
           <Route path="/login" element={<Login />} />
           <Route path="/casa-do-leite" element={<InicioLeite />} />
@@ -28,5 +34,15 @@ export default function Rotas() {
         <Footer />
       </BrowserRouter>
     </div>
+  ) : (
+    <BrowserRouter>
+      <Navegacao />
+      <Routes>
+        <Route path="/" element={<InicialAuth />} />
+        <Route path="*" element={<InicialAuth />} />
+        <Route path="/prestacaoconta" element={<PrestacaoConta />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
