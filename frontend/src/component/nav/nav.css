@@ -1,10 +1,14 @@
 .navegacao .bg-body-tertiary{
-  background-color: #d7bea8 !important;
+
+  background-color: #E7CF89 !important;
+
   height: 13%;
 }
 
 .dropdown-menu.show {
-  background-color: #d7bea8;
+
+  background-color: #E7CF89;
+
 }
 .navegacao a{
   text-decoration: none;

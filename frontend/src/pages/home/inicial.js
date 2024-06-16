@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
+
 import home from "./home.css";
+
+
 
 export default function Inicial() {
   const nav = useNavigate();
@@ -9,6 +12,7 @@ export default function Inicial() {
       <div className="container-projetos">
         <div className="projeto">
           <h3>Casa do Leite</h3>
+
           <p>
             A Casa do Leite, parte da Fundação Espírita "Sebastião Paiva" em
             Bauru, é uma entidade filantrópica que oferece assistência social a
@@ -18,6 +22,7 @@ export default function Inicial() {
             objetivo é inserir essas famílias no mercado de trabalho, melhorando
             sua autoestima e cidadania.
           </p>
+
           <div className="botao-container"> {/* Novo container para o botão */}
             <button onClick={() => nav('/casa-do-leite')}>Saiba mais</button>
           </div>
@@ -38,7 +43,9 @@ export default function Inicial() {
             <button onClick={() => nav('/abrigo-para-idosos')}>Saiba mais</button>
           </div>
         </div>
+
         
+
       </div>
     </div>
   );

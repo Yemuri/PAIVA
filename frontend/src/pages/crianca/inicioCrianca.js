@@ -1,15 +1,19 @@
 import "./crianca.css";
+
 import LogoCrianca from "../../images/logosembg.png";
 
 // import imgRaci1 from '../../images/imgraci1.jpg'
 import imgRaci2 from "../../images/imgraci2.jpg";
 import img3 from "../../images/img3.jpg";
 import CarrosselCrianca from "./carroselCrianca";
+
 import { FaPhone } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
+
+
 
 export default function InicioCrianca() {
   return (
@@ -22,6 +26,7 @@ export default function InicioCrianca() {
       </div>
 
       <div className="content-crianca">
+
         <div className="container-p">
           <p>
             A Associação de Proteção à Maternidade e à Criança (APMC), também
@@ -77,7 +82,9 @@ export default function InicioCrianca() {
               }}
             ></iframe>
           </div>
+
           <div className="contact">
+
             <h3>Contato</h3>
             <p>
               <CiLocationOn /> Rua não sei onde

@@ -4,6 +4,7 @@
   width: 100vw;
   background-image: url("../../images/fundo-crianca-removebg.png");
   background-size: contain;
+
   max-width: fit-content;
   height: 100vh;
   margin: 10px 0 10px 20px;
@@ -130,6 +131,7 @@
   background-image: url("../../images/fundo-crianca-removebg.png");
   background-size: contain;
 
+
   overflow-x: hidden;
 }
 
@@ -152,6 +154,8 @@
   align-items: center;
   justify-content: center;
 
+
+
   padding: 1%;
 }
 
@@ -159,7 +163,9 @@
   width: 20rem;
   background-color: #ffe8dc21;
 
+
   margin: 2%;
+
 
   box-shadow: 5px 6px 10px 2px #ffe8dc;
 }
@@ -213,13 +219,17 @@
   justify-content: center;
 }
 
+
 .contact {
+
   padding: 3%;
   background-color: #ffe8dcba;
   margin: 1%;
 }
 
 /* .contact  */
+
+
 
 /* .container-p-direita3{
     display: flex;
@@ -249,11 +259,13 @@
     border-radius: 20px;
 } */
 
+
 /* .cont-geral{
     width:fit-content;
     height: fit-content;
     margin-left: 3%;
 } */
+
 
 .container-p-direita p {
   align-content: center;
@@ -304,6 +316,7 @@
     background-color: rgba(255, 255, 255, 0.589);
     letter-spacing: 1px;
 } */
+
 /* height: 100vh; */
 /* max-width: fit-content; */
 /* margin: 10px 0 10px 20px; */
@@ -316,3 +329,4 @@
 /* padding: 3; */
 /* margin-right: 5rem;
 margin-bottom: 2rem; */
+
