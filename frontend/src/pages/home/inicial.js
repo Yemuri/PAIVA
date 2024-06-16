@@ -2,15 +2,21 @@ import { useNavigate } from "react-router-dom";
 
 import "./home.css";
 
+// IMAGENS
+import LogoCrianca from "../../images/logo-crianca.png"
+import LogoIdoso from "../../images/logo-idosos.png"
+import LogoLeite from "../../images/logo-leite.png"
+
 export default function Inicial() {
   const nav = useNavigate();
 
   return (
     <div className="geral-home">
+      {/* FALTA PARALLAX */}
       <div className="container-projetos">
         <div className="projeto">
           <h3>Casa do Leite</h3>
-
+          <img src={LogoLeite} alt="Logo casa do Leite" />
           <p>
             A Casa do Leite, parte da Fundação Espírita "Sebastião Paiva" em
             Bauru, é uma entidade filantrópica que oferece assistência social a

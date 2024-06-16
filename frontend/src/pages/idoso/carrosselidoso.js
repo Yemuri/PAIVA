@@ -1,4 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel'
+
+import "./carrosselIdoso.css";
+
+// IMAGENS
 import Img1 from '../../images/1.png'
 import Img2 from '../../images/2.png'
 import Img3 from '../../images/3.png'
@@ -15,7 +19,6 @@ import Img13 from '../../images/13.png'
 import Img14 from '../../images/14.png'
 import Img15 from '../../images/15.png'
 
-import "./carrosselIdoso.css";
 export default function CarrosselIdoso() {
     return(
         <div className="carrosselIdoso">
@@ -67,5 +70,5 @@ export default function CarrosselIdoso() {
                 </Carousel.Item>
             </Carousel>
         </div>
-    )
+    );
 }

@@ -1,7 +1,10 @@
 import React from 'react'
-import Jorgin from "./Jorgin.jpg"
 import "./equipe.css";
 
+// IMAGENS
+import Jorgin from "../../images/Jorgin.jpg"
+
+// ICONES
 import { RiTeamFill } from "react-icons/ri";
 
 export default function InicioEquipe(){

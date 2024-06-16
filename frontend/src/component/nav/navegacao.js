@@ -44,7 +44,7 @@ export default function Navegacao() {
                   <Link to="/casa-da-crianca">Casa da Criança</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="item-nav-h2">
-                  <Link to="/abrigo-de-idosos">Abrigo de Idosos</Link>
+                  <Link to="/abrigo-para-idosos">Abrigo de Idosos</Link>
                 </NavDropdown.Item>
 
                 {/* <NavDropdown.Divider />

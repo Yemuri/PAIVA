@@ -4,6 +4,8 @@ import { AuthContext } from "../../Context"
 import { toast } from "react-toastify"
 
 import "./login.css";
+
+// ICONES
 import { CiUser } from "react-icons/ci";
 import { IoLockClosedOutline } from "react-icons/io5";
 
@@ -55,7 +57,6 @@ export default function Login() {
             <div className="title_login">
               <h2>Login</h2>
             </div>
-            {/* c:\Users\yemur\OneDrive\Área de Trabalho\PAIVAwhats.png */}
             <div className="input-group_login">
               <form onSubmit={handleLogin}>
                 <div className="input_login">

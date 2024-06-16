@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./contas.css";
 
+// ICONES
 import { FaFilePdf } from "react-icons/fa6";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 
@@ -62,7 +63,6 @@ export default function InicioContas(){
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     )
