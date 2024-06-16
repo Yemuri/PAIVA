@@ -3,19 +3,19 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
-
+  
 .geral-home {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centraliza o conteúdo horizontalmente */
   background: rgb(245, 225, 174);
 }
-
+  
 h1 {
   color: #333; /* Cor de texto escura */
   margin-bottom: 20px;
 }
-
+  
 p {
   line-height: 1.6; /* Espaçamento entre as linhas */
   margin-bottom: 10px;
@@ -25,79 +25,81 @@ p {
 /* Seção de Projetos */
 .container-projetos {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Responsivo: 1 ou 2 colunas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo: 1 ou 2 colunas */
   gap: 20px; /* Espaçamento entre os projetos */
   width: 80%; /* Largura máxima do container */
   margin: 30px auto; /* Centraliza o container */
 }
-
+  
 .projeto {
   background-color: #fff; /* Fundo branco para os projetos */
   padding: 20px;
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+  
+.projeto h3 {
+  color: #333;
+  margin-top: 0;
 }
 
 /* Botões */
 button {
-  background-color: #4caf50;
+  background-color: #4CAF50; 
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; 
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #45a049; 
 }
-
+  
 .projeto {
   display: flex; /* Ativa o flexbox no container do projeto */
-  flex-direction: column; /* Coloca o botão abaixo do parágrafo */
+  flex-direction: column; /* Coloca o botão abaixo do parágrafo */  
 }
 
 .botao-container {
   margin-top: 10px; /* Adiciona um espaçamento superior ao botão */
 }
-
+  
 /* --------------------------------------- PARALLAX ---------------------------------------- */
-.wrapper {
+.wrapper{
   width: 100%;
   margin: 0 auto; /*uma margem de 0 em cima e embaixo e automática na esquerda e na direita*/
 }
 
-.container-parallax {
+.container-parallax{
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-section.module p {
+section.module p{
   margin-bottom: 15px;
   text-align: justify;
 }
 
-section.module:last-child {
+section.module:last-child{
   margin-bottom: 0;
 }
 
-section.module h2 {
+section.module h2{
   margin-bottom: 40px;
   font-size: 30px;
 }
 
-section.module.content {
+section.module.content{
   padding: 40px 0;
   background: #fffab8;
 }
 
-section.module.parallax {
+section.module.parallax{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +116,7 @@ section.module.parallax {
   -o-bacground-size: cover;
 }
 
-section.module.parallax:after {
+section.module.parallax:after{
   content: "";
   height: 100%;
   width: 100%;
@@ -122,38 +124,23 @@ section.module.parallax:after {
   z-index: 8;
 
   /* funções para rodar em outros navegadores */
-  background: -moz-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 40%,
-    #000 100%
-  );
-  background: -webkit-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 40%,
-    #000 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 40%,
-    #000 100%
-  );
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);  
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
-section.module.parallax-1 {
+section.module.parallax-1{
   background-image: url("../../images/paiva.png");
 }
 
-section.module.parallax h1 {
+section.module.parallax h1{
   color: #fff;
   text-align: center;
-  font-size: 78px;
+  font-size: 78px; 
   z-index: 50;
   text-transform: uppercase;
 }
 
-.container-parallax h5 {
+.container-parallax h5{
   color: #000;
 }
