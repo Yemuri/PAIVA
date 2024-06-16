@@ -19,10 +19,6 @@
   letter-spacing: 2px;
   word-break: break-all;
 }
-/* 
-.container-geral-2{
-  width: 95%;
-} */
 
 .carrossel-maps{
   display: flex;
@@ -92,4 +88,8 @@
 .infos{
   color: #020202b9;
   /* margin-bottom: 3%; */
+}
+
+.carousel-item{
+  float: none !important;
 }
