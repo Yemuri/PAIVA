@@ -5,6 +5,13 @@
   background-image: url("../../images/fundo-crianca-removebg.png");
   background-size: contain;
   overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.container-geral-crianca {
+  width: 100vw;
+  background-image: url('../../images/fundo-crianca-removebg.png');
+  background-size: contain;
+  overflow-x: hidden;
 }
 
 .content-crianca {
@@ -90,49 +97,109 @@
   margin: 1%;
 }
 
-.eventos{
-  width: 95%;
-  display: flex;
-  flex-wrap: wrap; 
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  padding: 1%;
+/* .contact  */
+
+
+/* .container-p-direita3{
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 5%;
+    margin-left: .4rem;
+    
 }
 
-.evento{
-  width: 32.5%;
-  border-radius: 10px;
-  background-color: #c1bddbc1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  /* color: aliceblue; */
+.container-p-direita3 p{
+    align-content: center;
+    box-shadow: 8px -7px 10px 2px rgba(166, 125, 98, 0.308);
+    padding: .5rem;
+    font-weight: 600;
+    width: 42.8%;
+    background-color: rgba(255, 255, 255, 0.589);
+    height: fit-content;
+    border-top: solid #866752bf 3px;
+    border-right: solid #866752bf 1px;
+    
 }
 
-.evento:hover {
-  transition: 0.3s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+.container-p-direita3 img {
+    width: 40%;
+    margin-left: 5%;
+    margin-left: 5%;
+    border-radius: 20px;
+} */
+
+
+/* .cont-geral{
+    width:fit-content;
+    height: fit-content;
+    margin-left: 3%;
+} */
+
+
+    display: flex;
+    align-items: center;
 }
 
-.img-evento{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1%;
+.container-p-direita p{
+    align-content: center;
+    box-shadow: 7px 7px 15px 2px #a67d624f;
+    padding: .5rem;
+    font-weight: 600;
+    margin-left: 3%;
+    background-color: rgba(255, 255, 255, 0.589);
+    height: fit-content;
+    border-bottom: solid #866752bf 3px;
+    border-right: solid #866752bf 1px;
+    border-radius: 0 20px;
 }
 
-.img-evento img{
-  width: 100%;
-  border-radius: 10px;
+.container-p-direita img {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
 }
 
-.descricao-evento{
-  width: 100%;
-  padding: 3%;
-  text-align: justify;
+.container-p-esquerda {
+    display: flex;
+    align-items: center;
 }
 
-.infos{
-  color: #020202b9;
-  /* margin-bottom: 3%; */
+.container-p-esquerda img{
+    border-radius: 20px;
 }
+
+.container-p-esquerda p{
+    align-content: center;
+    box-shadow: -7px -7px 15px 2px rgba(166, 125, 98, 0.308);
+    padding: .5rem;
+    font-weight: 600;
+    margin-right: 5%;
+    margin-left: 4%;
+    padding-left: 8px;
+    background-color: rgba(255, 255, 255, 0.589);
+    height: fit-content;
+    border-top: solid #866752bf 3px;
+    border-left: solid #866752bf 1px;
+
+} */
+
+/* .container-geral-crianca p {
+    text-align: justify;
+    margin: .5rem 2rem .5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.589);
+    letter-spacing: 1px;
+} */
+    /* height: 100vh; */
+    /* max-width: fit-content; */
+    /* margin: 10px 0 10px 20px; */
+    /* height: fit-content; */
+    /* margin: 0; */
+    /* overflow-y: hidden; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* padding: 3; */
+/* margin-right: 5rem;
+margin-bottom: 2rem; */
 
