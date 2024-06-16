@@ -1,16 +1,3 @@
-/* ------------------------------apagar isso----------------------- */
-.nav{
-    display: block;
-    width: 100%;
-    height: 100px;
-    background-color: aqua;
-}
-
-.nav > h1{
-    margin: 0;
-}
-/* ------------------------------------------------------------------ */
-
 .container-contas{
     overflow-x: hidden;
     display: flex;
@@ -37,15 +24,17 @@
 .title_contas{
     font-size: 45px;
     text-align: center;
+    color: black;
+    /* font-weight: bold; */
 }
 
 .card-pdf{
     border-radius: 0 20px 0 20px;
     text-align: center;
     /* backdrop-filter: blur(10px); */
-    background-color: rgba(245, 245, 220, 0.841);
+    background-color: rgba(245, 245, 220, 0.541);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
-
+    padding: 20px;
     flex: 1 1 calc(25% - 32px); /* define que cada card deve ocupar aproximadamente 25% do contêiner, ajustando-se com a margem*/
     max-width: calc(25% - 32px); /* define a largura máxima que o card pode ter, garantindo que ele nunca ultrapasse o valor calculado. */
 }
@@ -58,7 +47,6 @@
 
 .body-card-pdf{
     font-size: 150px;
-    
 }
 
 .body-card-pdf > a{

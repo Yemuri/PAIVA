@@ -1,21 +1,18 @@
-.navegacao .bg-body-tertiary{
-
-  background-color: #E7CF89 !important;
+.navegacao .bg-body-tertiary {
+  background-color: #e7cf89 !important;
 
   height: 13%;
 }
 
 .dropdown-menu.show {
-
-  background-color: #E7CF89;
-
+  background-color: #e7cf89;
 }
-.navegacao a{
+.navegacao a {
   text-decoration: none;
   color: black;
 }
 
-.item-h:hover{
+.item-h:hover {
   transition: 0.11s;
   color: #673915;
 }
