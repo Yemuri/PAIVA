@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import home from "./home.css";
+import "./home.css";
 
 export default function Inicial() {
   const nav = useNavigate();
