@@ -1,0 +1,17 @@
+.contGeral-dashboard {
+  border: solid red 2px;
+  background-color: #a06e49;
+  width: 100vw;
+}
+
+.container-categorias {
+  border: solid green 2px;
+  display: flex;
+  margin: 0 15%;
+  /* position: relative; */
+  justify-content: space-around;
+}
+
+.modais {
+  border: solid 2px red;
+}

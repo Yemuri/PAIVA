@@ -1,8 +1,11 @@
+import './crianca.css'
+
 import Carousel from 'react-bootstrap/Carousel'
+
+// IMAGENS 
 import Image1 from '../../images/kids1.jpg'
 import Image2 from '../../images/kids2.jpg'
 import Image3 from '../../images/kids3.jpg'
-import './crianca.css'
 
 export default function CarrosselCrianca() {
     return (

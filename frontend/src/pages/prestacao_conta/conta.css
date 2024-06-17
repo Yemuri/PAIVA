@@ -1,0 +1,94 @@
+.bodyLogin{
+  background-color: #f4e3e3b5;
+  background-image: url("../../images/wpp.png");
+  background-size: cover; /*imagem completa todo o fundo*/
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: grid;
+}
+
+.main_login{
+  display: flex;
+  justify-content: center; /* Alinha ao centro horizontalmente */
+  align-items: center; /* Alinha ao centro verticalmente */
+}
+
+.square_login{
+  background-color: #f4e3e3b5;
+  border-radius: 20px;
+  filter: blur(50%);
+
+  height: 500px;
+  width: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-square_login{
+  width: 100%;
+}
+
+.title_login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 5rem !important;
+  height: 150px;
+}
+
+.circle {
+  background-color: #8b4c1c;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+}
+
+form .input_login input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #484f56;
+  height: 3rem;
+  padding: 2%;
+}
+
+form .input_login input::placeholder {
+  color: #484f56;
+}
+
+form .input_login button {
+  border: none;
+  color: white;
+  background-color: #8b4c1c;
+  padding: 15px 32px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form .input_login button:hover {
+  background-color: #04aa6d;
+  transition: 0.4s;
+}
+
+.input-texto {
+  font-weight: bolder;
+  font-size: 20px;
+}
