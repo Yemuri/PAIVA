@@ -13,7 +13,9 @@
     width: 100%;
     align-items: center;
     justify-content: center;  
-    margin: 1%;  
+    /* margin-bottom: 100px; */
+    /* border: solid 2px red; */
+    /* padding: 3%;   */
 }
 
 .info{
@@ -21,7 +23,7 @@
     border-radius: 0 15px 0 15px;
     background-color: #673815b5;
     width: 950px;
-    margin: 1.5% 1%;
+    /* margin: 1.5% 1%; */
     padding: 2.3%;
 
     -webkit-box-shadow: 23px 29px 41px -22px rgba(0,0,0,0.59);

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./equipe.css";
+import "./inicioequipe.css";
 
 // IMAGENS
 import Jorgin from "../../images/Jorgin.jpg"
