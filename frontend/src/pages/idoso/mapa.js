@@ -1,3 +1,5 @@
+import "./inicioIdoso.css"
+
 export default function Mapa() {
   return (
     <div className="mapa">

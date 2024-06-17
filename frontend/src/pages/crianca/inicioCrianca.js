@@ -6,6 +6,7 @@ import CarrosselCrianca from "./carroselCrianca";
 import LogoCrianca from "../../images/logo-crianca.png";
 import imgRaci2 from "../../images/imgraci2.jpg";
 import img3 from "../../images/img3.jpg";
+import Teste from "../../images/PAIVAwhats.png"
 
 // ICONES
 import { FaPhone } from "react-icons/fa";
@@ -13,6 +14,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoMdMail } from "react-icons/io";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
+import { FaCalendarCheck } from "react-icons/fa6";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 
 export default function InicioCrianca() {
@@ -24,7 +27,47 @@ export default function InicioCrianca() {
           <h1>Bem-vindo à Casa da Criança</h1>
         </header>
       </div>
-      {/* FALTA EVENTO CRIANÇA (CRIANCAKAROL) */}
+      <section className="eventos">
+        <div className="evento">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+        <div className="evento">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+        <div className="evento">
+          <div className="img-evento">
+            <img src={Teste}/>
+          </div>
+          <div className="descricao-evento">
+            <div className="infos">
+              <p><FaCalendarCheck /> 27 de junho de 2024</p>
+              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            </div>
+            <h2>Cursos de Literatura</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+          </div> 
+        </div>
+      </section>
       <div className="content-crianca">
         <div className="container-p">
           <p>
@@ -67,7 +110,7 @@ export default function InicioCrianca() {
           </p>
           <img src={img3} alt="" />
         </div>
-        <div className="contact-maps">
+        <div className="contato-maps">
           <div className="maps">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.672620097876!2d-49.0551396248809!3d-22.328217829666553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bf6777759ca131%3A0x653724cac51ff7ef!2sUNISAGRADO!5e0!3m2!1spt-BR!2sbr!4v1716392893889!5m2!1spt-BR!2sbr"
@@ -82,7 +125,7 @@ export default function InicioCrianca() {
             ></iframe>
           </div>
 
-          <div className="contact">
+          <div className="contato">
 
             <h3>Contato</h3>
             <p>
