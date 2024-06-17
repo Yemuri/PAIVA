@@ -84,6 +84,13 @@
   padding-bottom: 3%;
 }
 
+
+.infos{
+  color: #020202b9;
+  /* margin-bottom: 3%; */
+}
+
+
 .carousel-item{
   float: none !important;
 }
