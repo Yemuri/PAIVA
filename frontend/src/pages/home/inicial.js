@@ -13,7 +13,7 @@ export default function Inicial() {
   return (
     <div className="geral-home">
       <div class="wrapper">
-        <section class="module parallax parallax-1">
+        <section class="module parallax parallax">
           <h1>Bem-vindo!</h1>
         </section>
 

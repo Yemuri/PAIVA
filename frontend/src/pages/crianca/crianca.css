@@ -87,7 +87,7 @@
   margin: 1%;
 }
 
-.eventos{
+.eventos-crianca{
   width: 95%;
   display: flex;
   flex-wrap: wrap; 
@@ -97,7 +97,7 @@
   padding: 1%;
 }
 
-.evento{
+.evento-crianca{
   width: 32.5%;
   border-radius: 10px;
   background-color: #b27092d8;
@@ -105,30 +105,30 @@
   color: #020202e9;
 }
 
-.evento:hover {
+.evento-crianca:hover {
   transition: 0.3s;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
-.img-evento{
+.img-evento-crianca{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1%;
 }
 
-.img-evento img{
+.img-evento-crianca img{
   width: 100%;
   border-radius: 10px;
 }
 
-.descricao-evento{
+.descricao-evento-crianca{
   width: 100%;
   padding: 3%;
   text-align: justify;
 }
 
-.infos{
+.infos-crianca{
   color: #020202b9;
   padding-bottom: 3%;
 }

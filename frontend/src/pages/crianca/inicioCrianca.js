@@ -27,13 +27,13 @@ export default function InicioCrianca() {
           <h1>Bem-vindo à Casa da Criança</h1>
         </header>
       </div>
-      <section className="eventos">
-        <div className="evento">
-          <div className="img-evento">
+      <section className="eventos-crianca">
+        <div className="evento-crianca">
+          <div className="img-evento-crianca">
             <img src={Teste}/>
           </div>
-          <div className="descricao-evento">
-            <div className="infos">
+          <div className="descricao-evento-crianca">
+            <div className="infos-crianca">
               <p><FaCalendarCheck /> 27 de junho de 2024</p>
               <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
             </div>
@@ -41,12 +41,12 @@ export default function InicioCrianca() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
           </div> 
         </div>
-        <div className="evento">
-          <div className="img-evento">
+        <div className="evento-crianca">
+          <div className="img-evento-crianca">
             <img src={Teste}/>
           </div>
-          <div className="descricao-evento">
-            <div className="infos">
+          <div className="descricao-evento-crianca">
+            <div className="infos-crianca">
               <p><FaCalendarCheck /> 27 de junho de 2024</p>
               <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
             </div>
@@ -54,12 +54,12 @@ export default function InicioCrianca() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
           </div> 
         </div>
-        <div className="evento">
-          <div className="img-evento">
+        <div className="evento-crianca">
+          <div className="img-evento-crianca">
             <img src={Teste}/>
           </div>
-          <div className="descricao-evento">
-            <div className="infos">
+          <div className="descricao-evento-crianca">
+            <div className="infos-crianca">
               <p><FaCalendarCheck /> 27 de junho de 2024</p>
               <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
             </div>

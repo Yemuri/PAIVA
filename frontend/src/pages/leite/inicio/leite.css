@@ -58,7 +58,7 @@
     width: 8%;
 }
 
-.caixinhas{
+.caixinhas-equipe{
     width: 95%;
     display: flex;
     flex-wrap: wrap; 
@@ -110,7 +110,7 @@
     font-size: 3em;
 }
 
-.evento{
+.evento-equipe{
     /* border: solid 3px red; */
     width: 32.5%;
     /* display: flex; */
@@ -122,30 +122,30 @@
     color: aliceblue;
 }
 
-.evento:hover {
+.evento-equipe:hover {
     transition: 0.3s;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
-.img-evento{
+.img-evento-equipe{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1%;
 }
 
-.img-evento img{
+.img-evento-equipe img{
     width: 100%;
     border-radius: 10px;
 }
 
-.descricao-evento{
+.descricao-evento-equipe{
     width: 100%;
     padding: 3%;
     text-align: justify;
 }
 
-.infos{
+.infos-equipe{
     color: #f0f0f0b9;
     margin-bottom: 3%;
 }
