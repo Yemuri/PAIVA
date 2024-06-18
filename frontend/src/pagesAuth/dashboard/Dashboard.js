@@ -81,15 +81,18 @@ export default function Dashboard() {
   return (
     <div className="contGeral-dashboard">
       <h1>Dashboard</h1>
-      <h2 style={{ margin: "2%" }}>Adicionar evento:</h2>
       <div className="container-categoria-modal">
-        <button onClick={abrirModalIdoso}>
-          <h3>Abrigo de idosos</h3>
+        <button onClick={abrirModalIdoso} style={{ margin: "2%" }}>
+          <h3>Criar Evento</h3>
         </button>
         <Modal isOpen={modalAberto} onRequestClose={fecharModal}>
           <form onSubmit={handleCadastrar}>
             <h2>Criar evento - Abrigo de idosos</h2>
             <div className="container-eventos">
+              <label>
+                <p>Categoria:</p>
+              </label>
+              <select type="text" placeholder="Selecione a categoria..." />
               <label>
                 <p>Nome:</p>
               </label>

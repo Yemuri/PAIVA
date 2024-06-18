@@ -10,6 +10,8 @@ const router = Router();
 const upload = multer(uploadConfig.upload("./tmp"));
 
 //UPLOAD
+router.post("/criar-categoria", new ArquivosController().criarCategoria);
+
 router.post(
   "/criar-evento",
   upload.single("file"),

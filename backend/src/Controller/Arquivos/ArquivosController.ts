@@ -2,8 +2,18 @@ import { Request, Response } from "express";
 import { ArquivosServices } from "../../Services/Arquivos/ArquivosServices";
 
 class ArquivosController {
+  async criarCategoria(req: Request, res: Response) {
+    const { nome_categoria } = req.body;
+
+    const arquivosServices = new ArquivosServices();
+    const resposta = await arquivosServices.criaCategoria({
+      nome_categoria,
+    });
+    return res.json(resposta);
+  }
+
   async criacaoEvento(req: Request, res: Response) {
-    const { nome, data, descricao, banner } = req.body;
+    const { nome, data, descricao, banner, categoriaId } = req.body;
     if (!req.file) {
       throw new Error("Imagem com problema");
     } else {
@@ -15,6 +25,7 @@ class ArquivosController {
         data,
         descricao,
         banner,
+        categoriaId,
       });
 
       return res.json(resposta);

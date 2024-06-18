@@ -36,7 +36,23 @@ model Evento{
   create_at DateTime? @default(now())
   update_at DateTime? @default(now())
 
+  Categoria_Eventos Categoria_Eventos @relation(fields: [categoriaId], references: [id])
+  categoriaId String
+
   @@map("eventos")
+}
+
+model Categoria_Eventos{
+  id  String  @id @default(uuid())
+  nome_categoria  String
+
+  create_at DateTime? @default(now())
+  update_at DateTime? @default(now())
+
+  Evento Evento[]
+
+  @@map("categorias_eventos")
+
 }
 
 model PrestacaoContas{
