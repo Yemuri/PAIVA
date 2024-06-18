@@ -39,10 +39,10 @@ export default function Rotas() {
     <BrowserRouter>
       <Navegacao />
       <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/" element={<InicialAuth />} />
         <Route path="*" element={<InicialAuth />} />
         {/* <Route path="/prestacaoconta" element={<PrestacaoConta />} /> */}
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );

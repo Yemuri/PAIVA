@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom"
-import React, { useState, useContext, useEffect } from "react"
-import { AuthContext } from "../../Context"
-import { toast } from "react-toastify"
+import { useNavigate } from "react-router-dom";
+import React, { useState, useContext, useEffect } from "react";
+import { AuthContext } from "../../Context";
+import { toast } from "react-toastify";
 
 import "./login.css";
 
@@ -10,42 +10,38 @@ import { CiUser } from "react-icons/ci";
 import { IoLockClosedOutline } from "react-icons/io5";
 
 export default function Login() {
+  const navigation = useNavigate();
 
-  const navigation = useNavigate()
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
 
-  const [email, setEmail] = useState("")
-  const [senha, setSenha] = useState("")
-
-  const { sighIn, VerifyToken } = useContext(AuthContext)
+  const { sighIn, VerifyToken } = useContext(AuthContext);
 
   useEffect(() => {
-    VerifyToken()
-  }, [])
+    VerifyToken();
+  }, []);
 
   async function handleLogin(e) {
-    e.preventDefault(e)
+    e.preventDefault(e);
 
     if (!email || !senha) {
       toast.error("Campos não preenchidos!", {
-        toastId: "toastId"
-      })
-      return
+        toastId: "toastId",
+      });
+      return;
     }
 
     try {
+      const response = await sighIn(email, senha);
 
-      const response = await sighIn(email, senha)
-
-      const username = response.data.nome
-      toast.success(`Bem vindo, ${username}!`)
-
-      navigation("/")
-
+      const username = response.data.nome;
+      toast.success(`Bem vindo, ${username}!`);
+      navigation("/dashboard");
     } catch (err) {
       toast.warning("Email ou senha incorreto(s)!", {
-        toastId: "toastId"
-      })
-      return
+        toastId: "toastId",
+      });
+      return;
     }
   }
 

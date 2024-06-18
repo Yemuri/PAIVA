@@ -54,11 +54,11 @@ export default function Navegacao() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link>
+              {/* <Nav.Link>
                 <Link to="/login" className="item-h">
                   <FaRegUserCircle /> Acesso Restrito
                 </Link>
-              </Nav.Link>
+              </Nav.Link> */}
 
               {/* <Nav.Link eventKey={2} href="#memes">
                 Dank memes <--- Dankest Memes
