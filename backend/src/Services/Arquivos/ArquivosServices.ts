@@ -59,6 +59,16 @@ class ArquivosServices {
     return eventos;
   }
 
+  async listarCategoriaEventos() {
+    const eventos = await prismaClient.categoria_Eventos.findMany({
+      orderBy: {
+        create_at: "desc",
+      },
+    });
+
+    return eventos;
+  }
+
   async listarEventoUnico({ id }: EventoUnico) {
     const resposta = await prismaClient.evento.findUnique({
       where: {

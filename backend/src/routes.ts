@@ -26,6 +26,9 @@ router.get(
   new ArquivosController().listaEventoUnico
 );
 
+//LISTAR CATEGORIAS
+router.get("/listar-categorias-evento", new ArquivosController().listarCategoriaEventos)
+
 router.post(
   "/criar-balancete",
   isAuth,

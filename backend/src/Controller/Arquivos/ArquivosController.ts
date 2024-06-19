@@ -38,6 +38,12 @@ class ArquivosController {
     return res.json(resposta);
   }
 
+  async listarCategoriaEventos(req: Request, res: Response) {
+    const arquivosServices = new ArquivosServices();
+    const resposta = await arquivosServices.listarCategoriaEventos();
+    return res.json(resposta);
+  }
+
   async listaEventoUnico(req: Request, res: Response) {
     const { id } = req.params;
     const arquivosServices = new ArquivosServices();

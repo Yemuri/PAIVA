@@ -5,6 +5,25 @@ import apiLocal from "../../APIs/APILocal";
 import { AuthContext } from "../../Context";
 import { toast } from "react-toastify";
 
+{/*
+
+ Eae Yemuri, blz? Então cara, ajustei aquele problema com as categorias
+ Você estava tentando puxar as categorias da tabela "eventos" e não "eventos-categorias"
+ Criei um controller e services para fazer a chamada delas e fiz o começinho de um Get de eventos
+
+  Segue abaixo as novas rotas, espero não atrapalhar muito 😻
+ 👇👇👇👇👇
+
+ "/listar-categorias-eventos" => listar categorias dos eventos
+ "/listar-eventos" => listar eventos em si
+
+ obs: ta ficando bem bonito o layout, parabens ao envolvidos!!!
+
+ obs²: Desculpa meu sumiço do projeto, estava re-organizando minha vida e me desculpa pelos
+       Tremendos atrasos na minha participação, qualquer coisa me enviem mensagem e desculpa
+       Novamente. Espero não ter atrasado tanto o projeto...
+*/}
+
 export default function Dashboard() {
   const [nome, setNome] = useState("");
   const [dataEvento, setDataEvento] = useState("");
@@ -12,6 +31,8 @@ export default function Dashboard() {
   const [imagem, setImagem] = useState(null);
   const [categoria, setCategoria] = useState('')
   const [idCategoria, setIdCategoria] = useState('')
+
+  const [eventos, setEventos] = useState('')
 
   const [token, setToken] = useState("");
 
@@ -41,7 +62,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function loadCategorias() {
-      const resposta = await apiLocal.get('/listar-eventos', {
+      const resposta = await apiLocal.get('/listar-categorias-evento', {
         headers: {
           Authorization: 'Bearer ' + `${token}`
         }
@@ -74,8 +95,16 @@ export default function Dashboard() {
     setDescricao("");
     setDataEvento("");
     setImagem(null);
-    
+
   }
+
+  useEffect(() => {
+    async function loadEventos() {
+      const response = await apiLocal.get("/listar-eventos")
+      setEventos(response.data)
+    }
+    loadEventos()
+  }, [eventos])
 
   const [modalAberto, setModalAberto] = useState(false);
 
@@ -105,16 +134,22 @@ export default function Dashboard() {
                 onChange={(e) => setIdCategoria(e.target.value)}
               >
                 <option >Selecione o evento:</option>
-
-{categoria.map((item) =>{
-  return(
-    <option
-    value={item.id}>
-      {item.nome}
-    </option>
-  )
-})}
-
+                {categoria.length === 0 ? (
+                  <h2>Aguardando Categorias</h2>
+                ) : (
+                  <>
+                    {
+                      categoria.map((item) => {
+                        return (
+                          <option
+                            value={item.id}>
+                            {item.nome_categoria}
+                          </option>
+                        )
+                      })
+                    }
+                  </>
+                )}
               </select>
 
               <label>
@@ -153,6 +188,28 @@ export default function Dashboard() {
             </div>
           </form>
         </Modal>
+      </div>
+
+      <br /> <br /> <br />
+
+      <div>
+        <h1>Mostrar eventos</h1>
+        {eventos.length === 0 ? (
+          <h2>Aguardando eventos</h2>
+        ) : (
+          <>
+            {eventos.map((item) => {
+              return (
+                <ul value={item.id}>
+                  <h2>{item.nome}</h2>
+                  <li>Data: {item.data}</li>
+                  <li>descricao: {item.descricao}</li>
+                  <li>{"Banner: vou ficar devendo, não sei fazer isso não 😢"}</li>
+                </ul>
+              )
+            })}
+          </>
+        )}
       </div>
     </div>
   );
