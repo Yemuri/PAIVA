@@ -19,6 +19,13 @@ router.post(
   new ArquivosController().criacaoEvento
 );
 
+//LISTAR EVENTOS
+router.get("/listar-eventos", new ArquivosController().listarTodosEventos);
+router.get(
+  "/listar-evento-unico/:id",
+  new ArquivosController().listaEventoUnico
+);
+
 router.post(
   "/criar-balancete",
   isAuth,

@@ -32,6 +32,21 @@ class ArquivosController {
     }
   }
 
+  async listarTodosEventos(req: Request, res: Response) {
+    const arquivosServices = new ArquivosServices();
+    const resposta = await arquivosServices.listarTodosEventos();
+    return res.json(resposta);
+  }
+
+  async listaEventoUnico(req: Request, res: Response) {
+    const { id } = req.params;
+    const arquivosServices = new ArquivosServices();
+    const resposta = await arquivosServices.listarEventoUnico({
+      id,
+    });
+    return res.json(resposta);
+  }
+
   async criacaoBalancete(req: Request, res: Response) {
     const { nome, ano, banner } = req.body;
     if (!req.file) {

@@ -8,6 +8,10 @@ interface CriarEvento {
   categoriaId: string;
 }
 
+interface EventoUnico {
+  id: string;
+}
+
 interface CriarBalancete {
   nome: string;
   ano: string;
@@ -43,6 +47,32 @@ class ArquivosServices {
     });
 
     return { dados: "Evento criado com sucesso!" };
+  }
+
+  async listarTodosEventos() {
+    const eventos = await prismaClient.evento.findMany({
+      orderBy: {
+        create_at: "desc",
+      },
+    });
+
+    return eventos;
+  }
+
+  async listarEventoUnico({ id }: EventoUnico) {
+    const resposta = await prismaClient.evento.findUnique({
+      where: {
+        id: id,
+      },
+      select: {
+        id: true,
+        nome: true,
+        data: true,
+        descricao: true,
+        banner: true,
+      },
+    });
+    return resposta;
   }
 
   async criaCategoria({ nome_categoria }: CriarCategoria) {
