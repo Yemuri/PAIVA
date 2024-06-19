@@ -10,6 +10,8 @@ export default function Dashboard() {
   const [dataEvento, setDataEvento] = useState("");
   const [descricao, setDescricao] = useState("");
   const [imagem, setImagem] = useState(null);
+  const [categoria, setCategoria] = useState('')
+  const [idCategoria, setIdCategoria] = useState('')
 
   const [token, setToken] = useState("");
 
@@ -37,42 +39,50 @@ export default function Dashboard() {
     }
   }
 
+  useEffect(() => {
+    async function loadCategorias() {
+      const resposta = await apiLocal.get('/listar-eventos', {
+        headers: {
+          Authorization: 'Bearer ' + `${token}`
+        }
+      })
+      setCategoria(resposta.data)
+      console.log(resposta.data)
+    }
+    loadCategorias()
+  }, [])
+
   async function handleCadastrar(e) {
     try {
       e.preventDefault();
+      const categoriaId = idCategoria
       const data = new FormData();
       data.append("nome", nome);
       data.append("data", dataEvento);
       data.append("descricao", descricao);
+      data.append('categoriaId', categoriaId)
       data.append("file", imagem);
       const response = await apiLocal.post("/criar-evento", data, {
-        headers: {
-          Authorization: "Bearer " + `${token}`,
-        },
       });
-      console.log(response);
       toast.success(response.data.dados);
       fecharModal();
     } catch (err) {
       toast.error("Erro");
+      console.log(err)
     }
     setNome("");
     setDescricao("");
     setDataEvento("");
     setImagem(null);
+    
   }
 
   const [modalAberto, setModalAberto] = useState(false);
 
-  function abrirModalIdoso() {
+  function abrirModal() {
     setModalAberto(true);
   }
-  function abrirModalCrianca() {
-    setModalAberto(true);
-  }
-  function abrirModalLeite() {
-    setModalAberto(true);
-  }
+
 
   function fecharModal() {
     setModalAberto(false);
@@ -82,17 +92,31 @@ export default function Dashboard() {
     <div className="contGeral-dashboard">
       <h1>Dashboard</h1>
       <div className="container-categoria-modal">
-        <button onClick={abrirModalIdoso} style={{ margin: "2%" }}>
+        <button onClick={abrirModal} style={{ margin: "2%" }}>
           <h3>Criar Evento</h3>
         </button>
         <Modal isOpen={modalAberto} onRequestClose={fecharModal}>
           <form onSubmit={handleCadastrar}>
             <h2>Criar evento - Abrigo de idosos</h2>
             <div className="container-eventos">
-              <label>
-                <p>Categoria:</p>
-              </label>
-              <select type="text" placeholder="Selecione a categoria..." />
+
+
+              <select value={idCategoria}
+                onChange={(e) => setIdCategoria(e.target.value)}
+              >
+                <option >Selecione o evento:</option>
+
+{categoria.map((item) =>{
+  return(
+    <option
+    value={item.id}>
+      {item.nome}
+    </option>
+  )
+})}
+
+              </select>
+
               <label>
                 <p>Nome:</p>
               </label>
@@ -113,7 +137,7 @@ export default function Dashboard() {
                 <p>Data:</p>
               </label>
               <input
-                type="datetime-local"
+                type="date"
                 value={dataEvento}
                 onChange={(e) => setDataEvento(e.target.value)}
               />

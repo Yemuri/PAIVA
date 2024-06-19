@@ -15,7 +15,7 @@ router.post("/criar-categoria", new ArquivosController().criarCategoria);
 router.post(
   "/criar-evento",
   upload.single("file"),
-  isAuth,
+
   new ArquivosController().criacaoEvento
 );
 
