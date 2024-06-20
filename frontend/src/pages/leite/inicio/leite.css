@@ -18,15 +18,19 @@
 }
 
 .azul{
-    background-color: #87ceeb;
+    background-color: #09b3f7;
 }
 
 .amarelo{
-    background-color: #ffd700;
+    background-color: #f3c200;
 }
 
 .laranja{
     background-color: #FA5300;
+}
+
+.vermelho{
+    background-color: #ef2400;
 }
 
 .branco{
@@ -58,7 +62,7 @@
     width: 8%;
 }
 
-.caixinhas-equipe{
+.caixinhas-leite{
     width: 95%;
     display: flex;
     flex-wrap: wrap; 
@@ -110,7 +114,7 @@
     font-size: 3em;
 }
 
-.evento-equipe{
+.evento-leite{
     /* border: solid 3px red; */
     width: 32.5%;
     /* display: flex; */
@@ -122,30 +126,30 @@
     color: aliceblue;
 }
 
-.evento-equipe:hover {
+.evento-leite:hover {
     transition: 0.3s;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
-.img-evento-equipe{
+.img-evento-leite{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1%;
 }
 
-.img-evento-equipe img{
+.img-evento-leite img{
     width: 100%;
     border-radius: 10px;
 }
 
-.descricao-evento-equipe{
+.descricao-evento-leite{
     width: 100%;
     padding: 3%;
     text-align: justify;
 }
 
-.infos-equipe{
+.infos-leite{
     color: #f0f0f0b9;
     margin-bottom: 3%;
 }

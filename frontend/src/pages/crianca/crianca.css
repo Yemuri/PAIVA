@@ -12,6 +12,7 @@
   width: 95%;
   justify-content: space-around;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .content-crianca {

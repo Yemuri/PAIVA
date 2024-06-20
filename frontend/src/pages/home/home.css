@@ -29,6 +29,7 @@ p {
   gap: 20px; /* Espaçamento entre os projetos */
   width: 80%; /* Largura máxima do container */
   margin: 30px auto; /* Centraliza o container */
+  padding: 2%;
 }
   
 .projeto {
@@ -36,6 +37,7 @@ p {
   padding: 20px;
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  height: fit-content;
 }
   
 .projeto h3 {
@@ -68,38 +70,39 @@ button:hover {
 }
   
 /* --------------------------------------- PARALLAX ---------------------------------------- */
-.wrapper{
+.wrapperP{
   width: 100%;
   margin: 0 auto; /*uma margem de 0 em cima e embaixo e automática na esquerda e na direita*/
 }
 
-.container-parallax{
+.container-parallaxP{
   width: 100%;
-  max-width: 720px;
+  /* max-width: 720px; */
   margin: 0 auto;
   padding: 0 20px;
 }
 
-section.module p{
-  margin-bottom: 15px;
+section.moduleP p{
+  /* margin-bottom: 15px; */
   text-align: justify;
+  font-size: 1.2em;
 }
 
-section.module:last-child{
+section.moduleP:last-child{
   margin-bottom: 0;
 }
 
-section.module h2{
+section.moduleP h2{
   margin-bottom: 40px;
   font-size: 30px;
 }
 
-section.module.content{
+section.moduleP.contentP{
   padding: 40px 0;
   background: #fffab8;
 }
 
-section.module.parallax{
+section.moduleP.parallaxP{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -116,7 +119,7 @@ section.module.parallax{
   -o-bacground-size: cover;
 }
 
-section.module.parallax:after{
+section.moduleP.parallaxP:after{
   content: "";
   height: 100%;
   width: 100%;
@@ -129,11 +132,11 @@ section.module.parallax:after{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
 }
 
-section.module.parallax{
+section.moduleP.parallaxP{
   background-image: url("../../images/paiva.png");
 }
 
-section.module.parallax h1{
+section.moduleP.parallaxP h1{
   color: #fff;
   text-align: center;
   font-size: 78px; 
@@ -141,6 +144,6 @@ section.module.parallax h1{
   text-transform: uppercase;
 }
 
-.container-parallax h5{
+.container-parallaxP h5{
   color: #000;
 }

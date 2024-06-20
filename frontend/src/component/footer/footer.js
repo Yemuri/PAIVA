@@ -99,19 +99,19 @@ export default function Footer() {
               {" "}
               <p>Bruna Raissa Correa Moura</p>
             </a>
-            <a href="mailto: email@gmail.com">
+            <a href="mailto: camilaapereira.r@gmail.com">
               {" "}
               <p>Camila Pereira Raimundo</p>
             </a>
-            <a href="mailto: email@gmail.com">
+            <a href="mailto: eduardocoque@gmail.com">
               {" "}
               <p>Eduardo Coque Corrêa de Lima</p>
             </a>
-            <a href="mailto: email@gmail.com">
+            <a href="mailto: fernandoemmendes@gmail.com">
               {" "}
               <p>Fernando Eduardo Motta Mendes</p>
             </a>
-            <a href="mailto: email@gmail.com">
+            <a href="mailto: karolinys766@gmail.com">
               {" "}
               <p>Karoliny Bazan Silva</p>
             </a>
@@ -119,17 +119,17 @@ export default function Footer() {
               {" "}
               <p>Kauã Limão Nunes</p>
             </a>
-            <a href="mailto: email@gmail.com">
+            <a href="mailto: liviabc.davila@gmail.com">
+              {" "}
+              <p>Livia barros Carvalho D'Avila </p>
+            </a>
+            <a href="mailto: thais.carolina.henrique@gmail.com">
               {" "}
               <p>Thais Carolina Henrique</p>
             </a>
-            <a href="mailto: yemuruwt@gmail.com">
+            <a href="mailto: yemuriwt@gmail.com">
               {" "}
               <p>Yemuri Wanderlei Teodoro</p>
-            </a>
-            <a href="mailto: email@gmail.com">
-              {" "}
-              <p>Lívia</p>
             </a>
           </div>
 
@@ -137,10 +137,10 @@ export default function Footer() {
             <h3>Parceria com:</h3>
             <h5>Projeto de Extensão - Fábrica de Softwares</h5>
             <Link to="https://unisagrado.edu.br/site/conteudo/11184-fabrica-de-software-desenvolvimento-de-websi.html">
-              <img width="60%" className="imagem1" src={logo2} />
+              <img className="imagem1" src={logo2} />
             </Link>
             <Link to="https://unisagrado.edu.br">
-              <img width="40%" className="imagem1" src={logo3} />
+              <img className="imagem1" src={logo3} />
             </Link>
           </div>
         </Modal>

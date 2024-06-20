@@ -7,22 +7,25 @@ import LogoCrianca from "../../images/logo-crianca.png"
 import LogoIdoso from "../../images/logo-idosos.png"
 import LogoLeite from "../../images/logo-leite.png"
 
+// ICONES
+import { FaBookmark } from "react-icons/fa";
+
 export default function Inicial() {
   const nav = useNavigate();
 
   return (
     <div className="geral-home">
-      <div class="wrapper">
-        <section class="module parallax parallax">
+      <div class="wrapperP">
+        <section class="moduleP parallaxP">
           <h1>Bem-vindo!</h1>
         </section>
 
-        <section class="module content">
-          <div class="container-parallax">
-            <h2>Sobre o projeto <i class="fa-solid fa-diagram-project"></i></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tempor nisi. Sed et vehicula elit, at lacinia sem. Fusce consectetur urna tortor, a malesuada magna consectetur quis. Phasellus libero libero, egestas eu vestibulum imperdiet, molestie sit amet elit. Suspendisse potenti. Morbi eget interdum nunc, sit amet commodo nisl. Nam suscipit eget libero ut tincidunt. Ut scelerisque eget nunc a ornare. In convallis sollicitudin sapien, ac consequat augue suscipit porta. Integer efficitur, justo elementum dictum finibus, magna ligula gravida tellus, eu mollis dolor nisl sit amet orci. Aliquam feugiat condimentum leo sed ullamcorper. Nam rhoncus leo sit amet molestie luctus.</p>
-            <p>Morbi pulvinar velit arcu, non gravida justo malesuada quis. Integer volutpat eu metus tincidunt accumsan. Ut egestas lacus quis sodales hendrerit. Nam vel eros placerat, euismod lectus sed, vulputate nisl. Nam dignissim malesuada semper. In hendrerit porta libero nec ornare. Sed id consectetur ipsum. Etiam bibendum pharetra dapibus.</p>
-            <p>Nunc sit amet lorem leo. Cras sed facilisis ipsum, ac egestas mi. Nam vitae nibh quis arcu vulputate cursus at eget metus. Pellentesque ac ullamcorper nulla. Sed luctus iaculis velit nec sodales. Morbi sagittis, neque et fermentum accumsan, tortor magna feugiat nulla, condimentum porta neque neque vel dui. Ut quis mauris arcu. Integer lobortis sem dolor, quis finibus ligula mollis ut. Ut quis leo et leo facilisis bibendum in quis neque. Sed id urna ut odio faucibus egestas. Sed non scelerisque velit. Donec tempus condimentum felis id egestas. Mauris vulputate aliquet mollis.</p>
+        <section class="moduleP contentP">
+          <div class="container-parallaxP">
+            <h2><FaBookmark />História</h2>
+            <p>Nascido em 08 de abril de 1909, na zona rural de Bebedouro cidade do Estado de São Paulo, Sebastião Paiva começou a trabalhar na lavoura de café aos oito anos de idade, porém após o falecimento de seu pai a família começou a passar por complicações financeiras. Aos dozes anos, se mudou para a cidade onde cursou até a segunda série do primeiro grau e ingressou no curso de telegrafista na Companhia Paulista de Trem. Depois de um ano, se tornou ferroviário, e permaneceu por 30 anos. Em 1942, foi promovido para o cargo de chefe da Companhia e se mudou para Bauru.</p>
+            <p>Por ser uma cidade de entroncamento ferroviário, Bauru recebia gente de todas as partes do Brasil e não tinham para onde ir; devido a isto o Sr. Paiva sentiu a necessidade de criar um local para abrigar e ajudar essas pessoas fundando então em 01 de janeiro de 1946, a Associação Beneficente Cristã, a qual manteve o Hospital Psiquiátrico até o mês de julho de 2005, a partir desse momento permanecendo a instituição como abrigos para idosos.</p>
+            
           </div>
         </section>  
       </div> 

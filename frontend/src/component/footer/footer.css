@@ -27,13 +27,6 @@ box-shadow: 8px 5px 12px rgb(148, 78, 46);
 }
 
 
-/* .contact {
-    min-width: 20%;
-    border: solid 1px white;
-    padding-bottom: 25px;
-} */
-
-
 .contact h6 {
     display: flex;
     justify-content: center;
@@ -102,6 +95,8 @@ box-shadow: 8px 5px 12px rgb(148, 78, 46);
     transition: 0.1s;
 }
 
+/* --------------------MODAL-------------------- */
+
 .container-modal{
     background-color: #A34F05;
     color: #FCF6B1;
@@ -114,11 +109,12 @@ box-shadow: 8px 5px 12px rgb(148, 78, 46);
     box-shadow: 0px 0px 15px 2px rgb(41, 41, 41);  
     padding: 20px;
     transform: translate(-50%, -50%);   
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    z-index: 70;
 }
 
 .container-modal a{
-    display: flex;
+    /* display: flex; */
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
@@ -126,10 +122,15 @@ box-shadow: 8px 5px 12px rgb(148, 78, 46);
 }
 
 .desenvolvedores{
-    width: 40%;
+    width: 60%;
 }
 
 .logo{
     width: 60%;
-    margin: 1%;
+    /* margin: 1%; */
+    flex-direction: column;
+}
+
+.logo img{
+    width: 100%;
 }

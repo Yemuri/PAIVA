@@ -129,10 +129,10 @@ export default function InicioCrianca() {
 
             <h3>Contato</h3>
             <p>
-              <CiLocationOn /> Rua não sei onde
+              <CiLocationOn /> Rua 12 de Outubro, 9-51, Bela Vista 
             </p>
             <p>
-              <FaPhone /> (14) 99999-9999
+              <FaPhone /> (14) 3222-3915
             </p>
             <p>
               <IoMdMail /> casa_da_crianca@gmail.com
