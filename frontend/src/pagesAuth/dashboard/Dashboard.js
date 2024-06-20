@@ -195,9 +195,12 @@ export default function Dashboard() {
                   <h2>{item.nome}</h2>
                   <li>Data: {item.data}</li>
                   <li>descricao: {item.descricao}</li>
-                  <li>
-                    {"Banner: vou ficar devendo, não sei fazer isso não 😢"}
-                  </li>
+                  <article>
+                    <img
+                      // src={`http://localhost:3333/files/${item.evento.banner}`}
+                      alt={item.nome}
+                    />
+                  </article>
                 </ul>
               );
             })}
