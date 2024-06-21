@@ -35,6 +35,7 @@ export default function Dashboard() {
   const [idCategoria, setIdCategoria] = useState("");
 
   const [eventos, setEventos] = useState("");
+  const [balancete, setBalancete] = useState("");
 
   const [token, setToken] = useState("");
 
@@ -70,7 +71,7 @@ export default function Dashboard() {
         },
       });
       setCategoria(resposta.data);
-      console.log(resposta.data);
+      // console.log(resposta.data);
     }
     loadCategorias();
   }, []);
@@ -105,6 +106,15 @@ export default function Dashboard() {
     }
     loadEventos();
   }, [eventos]);
+
+  useEffect(() => {
+    async function loadBalancete() {
+      const response = await apiLocal.get("/listar-balancete")
+      setBalancete(response)
+      console.log(response.data)
+    }
+    loadBalancete()
+  }, [balancete])
 
   const [modalAberto, setModalAberto] = useState(false);
 
@@ -203,6 +213,29 @@ export default function Dashboard() {
                   </article>
                 </ul>
               );
+            })}
+          </>
+        )}
+      </div>
+      <div>
+        <h1>Mostrar balancete</h1>
+        {balancete.length === 0 ? (
+          <h2>Aguardando balancete</h2>
+        ) : (
+          <>
+            {balancete.map((item) => {
+              return (
+                <ul value={item.id}>
+                  <h2>Nome: {item.nome}</h2>
+                  <li>Ano: {item.ano}</li>
+                  <article>
+                    <img
+                      src={`http://localhost:3333/files/${item.banner}`}
+                      alt={item.nome}
+                    />
+                  </article>
+                </ul>
+              )
             })}
           </>
         )}

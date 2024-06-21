@@ -63,10 +63,7 @@ class ArquivosServices {
     const eventos = await prismaClient.categoria_Eventos.findMany({
       orderBy: {
         create_at: "desc",
-      },
-      include: {
-        Evento: true,
-      },
+      }
     });
 
     return eventos;
@@ -112,6 +109,7 @@ class ArquivosServices {
     if (!nome || !ano || !banner) {
       throw new Error("Existem campos em branco");
     }
+
     await prismaClient.prestacaoContas.create({
       data: {
         nome: nome,

@@ -38,7 +38,7 @@ export default function PrestacaoConta() {
       const data = new FormData();
 
       data.append("nome", nome);
-      data.append("ano", data);
+      data.append("ano", ano);
       data.append("file", banner);
 
       const response = await apiLocal.post("/criar-balancete", data, {
