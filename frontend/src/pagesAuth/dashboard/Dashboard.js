@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import "./dashboard.css";
 import Modal from "react-modal";
 import apiLocal from "../../APIs/APILocal";
@@ -7,6 +7,7 @@ import { AuthContext } from "../../Context";
 import { toast } from "react-toastify";
 
 import { FaFilePdf } from "react-icons/fa6";
+import PrestacaoConta from "../../pages/prestacao_conta/paginaConta";
 
 {
   /*
@@ -112,19 +113,28 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function loadBalancete() {
-      const response = await apiLocal.get("/listar-balancete")
-      setBalancete(response.data)
+      const response = await apiLocal.get("/listar-balancete");
+      setBalancete(response.data);
     }
-    loadBalancete()
-  }, [balancete])
+    loadBalancete();
+  }, [balancete]);
 
   const [modalAberto, setModalAberto] = useState(false);
+  const [modalBalancete, setModalBalancete] = useState(false);
 
   function abrirModal() {
     setModalAberto(true);
   }
 
   function fecharModal() {
+    setModalAberto(false);
+  }
+
+  function abrirModalBalancete() {
+    setModalAberto(true);
+  }
+
+  function fecharModalBalancete() {
     setModalAberto(false);
   }
 
@@ -193,6 +203,7 @@ export default function Dashboard() {
             </div>
           </form>
         </Modal>
+        <PrestacaoConta />
       </div>
       <br /> <br /> <br />
       <div>
@@ -225,7 +236,6 @@ export default function Dashboard() {
           <h2>Aguardando balancete</h2>
         ) : (
           <>
-
             <br />
 
             {balancete.map((item) => {
@@ -238,7 +248,7 @@ export default function Dashboard() {
                   <h3 style={{ textAlign: "justify" }}>{item.ano}</h3>
                   <br /> <br /> <br />
                 </ul>
-              )
+              );
             })}
           </>
         )}

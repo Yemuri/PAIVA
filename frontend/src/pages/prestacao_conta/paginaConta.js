@@ -98,7 +98,7 @@ export default function PrestacaoConta() {
                     </i>
                   </span>
                   <input
-                    type="number"
+                    type="date"
                     placeholder="data"
                     className="input-texto"
                     value={ano}

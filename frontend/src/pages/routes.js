@@ -42,10 +42,16 @@ export default function Rotas() {
     <BrowserRouter>
       <Navegacao />
       <Routes>
+        <Route path="*" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Inicial />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/" element={<InicialAuth />} />
-        <Route path="*" element={<InicialAuth />} />
-        <Route path="/prestacaoconta" element={<PrestacaoConta />} />
+        <Route path="/casa-do-leite" element={<InicioLeite />} />
+        <Route path="/casa-da-crianca" element={<InicioCrianca />} />
+        <Route path="/abrigo-para-idosos" element={<InicioIdoso />} />
+        <Route path="/equipe" element={<InicioEquipe />} />
+        <Route path="/prestacao-de-contas" element={<InicioContas />} />
+        <Route path="/crud" element={<CrudEvento />} />
       </Routes>
     </BrowserRouter>
   );
