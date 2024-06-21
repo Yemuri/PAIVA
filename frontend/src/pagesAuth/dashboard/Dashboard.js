@@ -1,9 +1,12 @@
 import { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom"
 import "./dashboard.css";
 import Modal from "react-modal";
 import apiLocal from "../../APIs/APILocal";
 import { AuthContext } from "../../Context";
 import { toast } from "react-toastify";
+
+import { FaFilePdf } from "react-icons/fa6";
 
 {
   /*
@@ -110,8 +113,7 @@ export default function Dashboard() {
   useEffect(() => {
     async function loadBalancete() {
       const response = await apiLocal.get("/listar-balancete")
-      setBalancete(response)
-      console.log(response.data)
+      setBalancete(response.data)
     }
     loadBalancete()
   }, [balancete])
@@ -223,17 +225,18 @@ export default function Dashboard() {
           <h2>Aguardando balancete</h2>
         ) : (
           <>
+
+            <br />
+
             {balancete.map((item) => {
               return (
-                <ul value={item.id}>
-                  <h2>Nome: {item.nome}</h2>
-                  <li>Ano: {item.ano}</li>
-                  <article>
-                    <img
-                      src={`http://localhost:3333/files/${item.banner}`}
-                      alt={item.nome}
-                    />
-                  </article>
+                <ul>
+                  <h2>{item.nome}</h2>
+                  <Link to={`http://localhost:3333/files/${item.banner}`}>
+                    <FaFilePdf color="purple" size="50" />
+                  </Link>
+                  <h3 style={{ textAlign: "justify" }}>{item.ano}</h3>
+                  <br /> <br /> <br />
                 </ul>
               )
             })}
