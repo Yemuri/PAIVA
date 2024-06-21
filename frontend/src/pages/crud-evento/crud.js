@@ -2,6 +2,8 @@ import { IoIosAddCircle } from "react-icons/io";
 import { FaMapPin, FaCalendarAlt } from "react-icons/fa";
 import { FaCamera } from "react-icons/fa6";
 
+import "./crud.css";
+
 export default function CrudEvento() {
   return (
     <div className="container">
