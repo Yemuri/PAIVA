@@ -5,7 +5,8 @@ import apiLocal from "../../APIs/APILocal";
 import { AuthContext } from "../../Context";
 import { toast } from "react-toastify";
 
-{/*
+{
+  /*
 
  Eae Yemuri, blz? Então cara, ajustei aquele problema com as categorias
  Você estava tentando puxar as categorias da tabela "eventos" e não "eventos-categorias"
@@ -22,17 +23,18 @@ import { toast } from "react-toastify";
  obs²: Desculpa meu sumiço do projeto, estava re-organizando minha vida e me desculpa pelos
        Tremendos atrasos na minha participação, qualquer coisa me enviem mensagem e desculpa
        Novamente. Espero não ter atrasado tanto o projeto...
-*/}
+*/
+}
 
 export default function Dashboard() {
   const [nome, setNome] = useState("");
   const [dataEvento, setDataEvento] = useState("");
   const [descricao, setDescricao] = useState("");
   const [imagem, setImagem] = useState(null);
-  const [categoria, setCategoria] = useState('')
-  const [idCategoria, setIdCategoria] = useState('')
+  const [categoria, setCategoria] = useState("");
+  const [idCategoria, setIdCategoria] = useState("");
 
-  const [eventos, setEventos] = useState('')
+  const [eventos, setEventos] = useState("");
 
   const [token, setToken] = useState("");
 
@@ -62,56 +64,53 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function loadCategorias() {
-      const resposta = await apiLocal.get('/listar-categorias-evento', {
+      const resposta = await apiLocal.get("/listar-categorias-evento", {
         headers: {
-          Authorization: 'Bearer ' + `${token}`
-        }
-      })
-      setCategoria(resposta.data)
-      console.log(resposta.data)
+          Authorization: "Bearer " + `${token}`,
+        },
+      });
+      setCategoria(resposta.data);
+      console.log(resposta.data);
     }
-    loadCategorias()
-  }, [])
+    loadCategorias();
+  }, []);
 
   async function handleCadastrar(e) {
     try {
       e.preventDefault();
-      const categoriaId = idCategoria
+      const categoriaId = idCategoria;
       const data = new FormData();
       data.append("nome", nome);
       data.append("data", dataEvento);
       data.append("descricao", descricao);
-      data.append('categoriaId', categoriaId)
+      data.append("categoriaId", categoriaId);
       data.append("file", imagem);
-      const response = await apiLocal.post("/criar-evento", data, {
-      });
+      const response = await apiLocal.post("/criar-evento", data, {});
       toast.success(response.data.dados);
       fecharModal();
     } catch (err) {
       toast.error("Erro");
-      console.log(err)
+      console.log(err);
     }
     setNome("");
     setDescricao("");
     setDataEvento("");
     setImagem(null);
-
   }
 
   useEffect(() => {
     async function loadEventos() {
-      const response = await apiLocal.get("/listar-eventos")
-      setEventos(response.data)
+      const response = await apiLocal.get("/listar-eventos");
+      setEventos(response.data);
     }
-    loadEventos()
-  }, [eventos])
+    loadEventos();
+  }, [eventos]);
 
   const [modalAberto, setModalAberto] = useState(false);
 
   function abrirModal() {
     setModalAberto(true);
   }
-
 
   function fecharModal() {
     setModalAberto(false);
@@ -128,26 +127,20 @@ export default function Dashboard() {
           <form onSubmit={handleCadastrar}>
             <h2>Criar evento - Abrigo de idosos</h2>
             <div className="container-eventos">
-
-
-              <select value={idCategoria}
+              <select
+                value={idCategoria}
                 onChange={(e) => setIdCategoria(e.target.value)}
               >
-                <option >Selecione o evento:</option>
+                <option>Selecione o evento:</option>
                 {categoria.length === 0 ? (
                   <h2>Aguardando Categorias</h2>
                 ) : (
                   <>
-                    {
-                      categoria.map((item) => {
-                        return (
-                          <option
-                            value={item.id}>
-                            {item.nome_categoria}
-                          </option>
-                        )
-                      })
-                    }
+                    {categoria.map((item) => {
+                      return (
+                        <option value={item.id}>{item.nome_categoria}</option>
+                      );
+                    })}
                   </>
                 )}
               </select>
@@ -189,9 +182,7 @@ export default function Dashboard() {
           </form>
         </Modal>
       </div>
-
       <br /> <br /> <br />
-
       <div>
         <h1>Mostrar eventos</h1>
         {eventos.length === 0 ? (
@@ -204,9 +195,14 @@ export default function Dashboard() {
                   <h2>{item.nome}</h2>
                   <li>Data: {item.data}</li>
                   <li>descricao: {item.descricao}</li>
-                  <li>{"Banner: vou ficar devendo, não sei fazer isso não 😢"}</li>
+                  <article>
+                    <img
+                      // src={`http://localhost:3333/files/${item.evento.banner}`}
+                      alt={item.nome}
+                    />
+                  </article>
                 </ul>
-              )
+              );
             })}
           </>
         )}

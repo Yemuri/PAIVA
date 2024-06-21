@@ -64,6 +64,9 @@ class ArquivosServices {
       orderBy: {
         create_at: "desc",
       },
+      include: {
+        Evento: true,
+      },
     });
 
     return eventos;
