@@ -1,9 +1,13 @@
 import { useState, useEffect, useContext } from "react";
+import { Link } from "react-router-dom";
 import "./dashboard.css";
 import Modal from "react-modal";
 import apiLocal from "../../APIs/APILocal";
 import { AuthContext } from "../../Context";
 import { toast } from "react-toastify";
+
+import { FaFilePdf } from "react-icons/fa6";
+import PrestacaoConta from "../../pages/prestacao_conta/paginaConta";
 
 {
   /*
@@ -35,6 +39,7 @@ export default function Dashboard() {
   const [idCategoria, setIdCategoria] = useState("");
 
   const [eventos, setEventos] = useState("");
+  const [balancete, setBalancete] = useState("");
 
   const [token, setToken] = useState("");
 
@@ -70,7 +75,7 @@ export default function Dashboard() {
         },
       });
       setCategoria(resposta.data);
-      console.log(resposta.data);
+      // console.log(resposta.data);
     }
     loadCategorias();
   }, []);
@@ -106,13 +111,30 @@ export default function Dashboard() {
     loadEventos();
   }, [eventos]);
 
+  useEffect(() => {
+    async function loadBalancete() {
+      const response = await apiLocal.get("/listar-balancete");
+      setBalancete(response.data);
+    }
+    loadBalancete();
+  }, [balancete]);
+
   const [modalAberto, setModalAberto] = useState(false);
+  const [modalBalancete, setModalBalancete] = useState(false);
 
   function abrirModal() {
     setModalAberto(true);
   }
 
   function fecharModal() {
+    setModalAberto(false);
+  }
+
+  function abrirModalBalancete() {
+    setModalAberto(true);
+  }
+
+  function fecharModalBalancete() {
     setModalAberto(false);
   }
 
@@ -181,6 +203,7 @@ export default function Dashboard() {
             </div>
           </form>
         </Modal>
+        <PrestacaoConta />
       </div>
       <br /> <br /> <br />
       <div>
@@ -197,10 +220,33 @@ export default function Dashboard() {
                   <li>descricao: {item.descricao}</li>
                   <article>
                     <img
-                      // src={`http://localhost:3333/files/${item.evento.banner}`}
+                      src={`http://localhost:3333/files/${item.banner}`}
                       alt={item.nome}
                     />
                   </article>
+                </ul>
+              );
+            })}
+          </>
+        )}
+      </div>
+      <div>
+        <h1>Mostrar balancete</h1>
+        {balancete.length === 0 ? (
+          <h2>Aguardando balancete</h2>
+        ) : (
+          <>
+            <br />
+
+            {balancete.map((item) => {
+              return (
+                <ul>
+                  <h2>{item.nome}</h2>
+                  <Link to={`http://localhost:3333/files/${item.banner}`}>
+                    <FaFilePdf color="purple" size="50" />
+                  </Link>
+                  <h3 style={{ textAlign: "justify" }}>{item.ano}</h3>
+                  <br /> <br /> <br />
                 </ul>
               );
             })}

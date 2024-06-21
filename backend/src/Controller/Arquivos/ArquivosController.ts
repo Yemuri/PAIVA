@@ -70,6 +70,12 @@ class ArquivosController {
       return res.json(resposta);
     }
   }
+
+  async listarBalancete(req: Request, res: Response) {
+    const arquivosServices = new ArquivosServices()
+    const resposta = await arquivosServices.listarBalancete()
+    return res.json(resposta)
+  }
 }
 
 export { ArquivosController };
