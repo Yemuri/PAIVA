@@ -45,7 +45,7 @@
     align-items: center;
 }
     
-.logo{
+.logo-leite{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,12 +53,12 @@
     width: 100%;
 }
 
-.logo h1{
+.logo-leite h1{
     padding: 2%;
     font-weight: bold;
 }
 
-.logo img{
+.logo-leite img{
     width: 8%;
 }
 

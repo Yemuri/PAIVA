@@ -4,8 +4,9 @@ import CarrosselCrianca from "./carroselCrianca";
 
 // IMAGENS
 import LogoCrianca from "../../images/logo-crianca.png";
-import imgRaci2 from "../../images/imgraci2.jpg";
-import img3 from "../../images/img3.jpg";
+import img1 from "../../images/inst1.png";
+import img2 from "../../images/inst2.png";
+import img3 from "../../images/inst3.png"
 import Teste from "../../images/PAIVAwhats.png"
 
 // ICONES
@@ -81,7 +82,7 @@ export default function InicioCrianca() {
             negligência, abandono, abuso ou vulnerabilidade social, garantindo
             seus direitos conforme o Estatuto da Criança e do Adolescente.
           </p>
-          <img src={imgRaci2} alt="" />
+          <img src={img1} alt="" />
         </div>
         <div className="container-p">
           <CarrosselCrianca />
@@ -108,7 +109,7 @@ export default function InicioCrianca() {
             se envolver, entre em contato com a Casa da Criança pelo telefone
             (14) 3222-5171!
           </p>
-          <img src={img3} alt="" />
+          <img src={img2} alt="" />
         </div>
         <div className="contato-maps">
           <div className="maps">

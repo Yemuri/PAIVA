@@ -7,6 +7,7 @@ import Image1 from '../../images/kids1.jpg'
 import Image2 from '../../images/kids2.jpg'
 import Image3 from '../../images/kids3.jpg'
 
+
 export default function CarrosselCrianca() {
     return (
         <div className='cont-geral'>

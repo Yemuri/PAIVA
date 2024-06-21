@@ -22,7 +22,7 @@ export default function InicioLeite() {
   return (
     <div className="geral">
 
-      <div className="logo">
+      <div className="logo-leite">
         <img src={LogoLeite} alt="Logo casa do Leite" />
         <h1>Bem-vindo à Casa do Leite!</h1>
       </div>
