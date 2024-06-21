@@ -19,9 +19,8 @@ export default function PrestacaoConta() {
   const { VerifyToken } = useContext(AuthContext);
 
   const [nome, setNome] = useState("");
-  const [data, setData] = useState("");
-  const [desc, setDesc] = useState("");
-  const [file, setBanner] = useState("");
+  const [ano, setAno] = useState("");
+  const [banner, setBanner] = useState("");
 
   const [token, setToken] = useState("");
 
@@ -39,9 +38,8 @@ export default function PrestacaoConta() {
       const data = new FormData();
 
       data.append("nome", nome);
-      data.append("data", data);
-      data.append("descricao", desc);
-      data.append("file", file);
+      data.append("ano", data);
+      data.append("file", banner);
 
       const response = await apiLocal.post("/criar-balancete", data, {
         headers: {
@@ -51,7 +49,7 @@ export default function PrestacaoConta() {
 
       toast.success(response.data.dados);
     } catch (err) {
-      toast.error(err);
+      console.log(err);
       return;
     }
   }
@@ -62,11 +60,11 @@ export default function PrestacaoConta() {
       return;
     }
 
-    console.log(e.target.files[0]);
     const pdf = e.target.files[0];
-    if (pdf.type === "pdf/.pdf/word/.word") {
+    if (pdf.type === "application/pdf") {
       setBanner(pdf);
     }
+    console.log(banner);
   }
 
   return (
@@ -94,40 +92,25 @@ export default function PrestacaoConta() {
                   />
                 </div>
                 <div className="input_login">
-                  <input
-                    type="password"
-                    placeholder="data"
-                    className="input-texto"
-                    value={desc}
-                    onChange={(e) => setDesc(e.target.value)}
-                  />
-                  <span className="circle">
-                    <i className="fa-solid fa-lock">
-                      <IoLockClosedOutline />
-                    </i>
-                  </span>
-                </div>
-                <div className="input_login">
                   <span className="circle">
                     <i className="fa-solid fa-lock">
                       <GiArmorPunch />
                     </i>
                   </span>
                   <input
-                    type="date"
-                    placeholder="desc"
+                    type="number"
+                    placeholder="data"
                     className="input-texto"
-                    value={data}
-                    onChange={(e) => setData(e.target.value)}
+                    value={ano}
+                    onChange={(e) => setAno(e.target.value)}
                   />
                 </div>
                 <div className="input_login">
                   <input
                     type="file"
-                    accept="pdf/.pdf/word/.word"
+                    accept="application/pdf"
                     placeholder="banner"
                     className="input-texto"
-                    value={file}
                     onChange={handlePdf}
                   />
                   <span className="circle">

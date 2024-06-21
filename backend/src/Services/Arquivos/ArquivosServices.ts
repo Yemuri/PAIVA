@@ -121,6 +121,15 @@ class ArquivosServices {
     });
     return { dados: "Balancete enviado com sucesso!" };
   }
+
+  async listarBalancete() {
+    const response = await prismaClient.prestacaoContas.findMany({
+      orderBy: {
+        create_at: "desc",
+      },
+    })
+    return response
+  }
 }
 
 export { ArquivosServices };

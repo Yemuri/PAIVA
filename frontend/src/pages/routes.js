@@ -15,6 +15,7 @@ import InicioContas from "./contas/inicioContas";
 import InicialAuth from "../pagesAuth/homeAuth/inicial";
 import Dashboard from "../pagesAuth/dashboard/Dashboard";
 import CrudEvento from "./crud-evento/crud";
+import PrestacaoConta from "./prestacao_conta/paginaConta";
 
 export default function Rotas() {
   const { authentication } = useContext(AuthContext);
@@ -44,7 +45,7 @@ export default function Rotas() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/" element={<InicialAuth />} />
         <Route path="*" element={<InicialAuth />} />
-        {/* <Route path="/prestacaoconta" element={<PrestacaoConta />} /> */}
+        <Route path="/prestacaoconta" element={<PrestacaoConta />} />
       </Routes>
     </BrowserRouter>
   );

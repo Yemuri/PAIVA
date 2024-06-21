@@ -60,6 +60,8 @@ class ArquivosController {
     } else {
       const { filename: banner } = req.file;
 
+      console.log(nome)
+
       const arquivosServices = new ArquivosServices();
       const resposta = await arquivosServices.criarBalancete({
         nome,
@@ -69,6 +71,12 @@ class ArquivosController {
       console.log(resposta);
       return res.json(resposta);
     }
+  }
+
+  async listarBalancete(req:Request, res:Response){
+    const arquivosServices = new ArquivosServices()
+    const resposta = await arquivosServices.listarBalancete()
+    return res.json(resposta)
   }
 }
 

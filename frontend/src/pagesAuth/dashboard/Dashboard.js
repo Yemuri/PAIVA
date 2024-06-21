@@ -197,7 +197,7 @@ export default function Dashboard() {
                   <li>descricao: {item.descricao}</li>
                   <article>
                     <img
-                      // src={`http://localhost:3333/files/${item.evento.banner}`}
+                      src={`http://localhost:3333/files/${item.banner}`}
                       alt={item.nome}
                     />
                   </article>

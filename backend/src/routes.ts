@@ -19,6 +19,13 @@ router.post(
   new ArquivosController().criacaoEvento
 );
 
+router.post(
+  "/criar-balancete",
+  isAuth,
+  upload.single("file"),
+  new ArquivosController().criacaoBalancete
+);
+
 //LISTAR EVENTOS
 router.get("/listar-eventos", new ArquivosController().listarTodosEventos);
 router.get(
@@ -29,12 +36,9 @@ router.get(
 //LISTAR CATEGORIAS
 router.get("/listar-categorias-evento", new ArquivosController().listarCategoriaEventos)
 
-router.post(
-  "/criar-balancete",
-  isAuth,
-  upload.single("file"),
-  new ArquivosController().criacaoBalancete
-);
+//LISTAR BALANCETE
+router.get("/listar-balancete", new ArquivosController().listarBalancete)
+
 //USUARIO
 router.post("/criar-usuario", new UsuarioController().criarUsuario);
 router.post("/logar-usuario", new UsuarioController().logarUsuario);
