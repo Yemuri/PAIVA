@@ -1,18 +1,34 @@
-.navegacao .bg-body-tertiary {
-  background-color: #e7cf89 !important;
-
+.navegacao{
+  width: 100%;
   height: 13%;
-}
-
-.dropdown-menu.show {
   background-color: #e7cf89;
-}
-.navegacao a {
-  text-decoration: none;
-  color: black;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.item-h:hover {
-  transition: 0.11s;
-  color: #673915;
+.navegacao .fundacao{
+  font-size: 1.3em;
+  padding: 1%;
 }
+
+.navegacao .item-navegacao{
+  padding: 0.3%;
+}
+
+.navegacao a{
+  text-decoration: none;
+  color: #000;
+}
+
+.item-navegacao a:hover{
+  color: firebrick;
+  transition: 0.2s;
+}
+
+.op a:hover{
+  transition: 0.2s;
+  color: #ffffffb3;
+}
+

@@ -18,14 +18,14 @@ export default function InicioIdoso() {
   const [eventos, setEventos] = useState("");
   const { VerifyToken } = useContext(AuthContext);
 
-  useEffect(() => {
-    async function loadIdoso() {
-      const response = await apiLocal.get("/listar-categorias-evento");
-      setEventos(response.data);
-      console.log(response.data);
-    }
-    loadEventos();
-  }, [eventos]);
+  // useEffect(() => {
+  //   async function loadIdoso() {
+  //     const response = await apiLocal.get("/listar-categorias-evento");
+  //     setEventos(response.data);
+  //     console.log(response.data);
+  //   }
+  //   loadEventos();
+  // }, [eventos]);
 
   return (
     <div className="cont-geral-idoso">

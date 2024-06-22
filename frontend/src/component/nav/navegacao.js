@@ -1,72 +1,26 @@
 import "./nav.css";
 
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaRegUserCircle } from "react-icons/fa";
+import { RiTeamFill } from "react-icons/ri";
+import { FaMoneyBillTransfer } from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 
 export default function Navegacao() {
   return (
     <div className="navegacao">
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand>
-            <Link to="/" className="item-h">
-              Fundação Sebastião Paiva
-            </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link>
-                <Link to="/equipe" className="item-h">
-                  Equipe
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/prestacao-de-contas" className="item-h">
-                  Prestação de contas
-                </Link>
-              </Nav.Link>
+      <span className="fundacao"><Link to="/">Fundação Sebastião Paiva</Link></span>
+      <span className="item-navegacao"><Link to="/casa-do-leite">Casa do Leite</Link></span>
+      <span className="item-navegacao"><Link to="/casa-da-crianca">Casa da Criança</Link></span>
+      <span className="item-navegacao"><Link to="/abrigo-para-idosos">Abrigo de Idosos</Link></span>
 
-              <NavDropdown
-                title="Nossos Projetos"
-                id="collapsible-nav-dropdown"
-                className="item-h"
-              >
-                <NavDropdown.Item className="item-nav-h2">
-                  <Link to="/casa-do-leite">Casa do Leite</Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item className="item-nav-h2">
-                  <Link to="/casa-da-crianca">Casa da Criança</Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item className="item-nav-h2">
-                  <Link to="/abrigo-para-idosos">Abrigo de Idosos</Link>
-                </NavDropdown.Item>
-
-                {/* <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Opção teste
-                </NavDropdown.Item> */}
-              </NavDropdown>
-            </Nav>
-            <Nav>
-              {/* <Nav.Link>
-                <Link to="/login" className="item-h">
-                  <FaRegUserCircle /> Acesso Restrito
-                </Link>
-              </Nav.Link> */}
-
-              {/* <Nav.Link eventKey={2} href="#memes">
-                Dank memes <--- Dankest Memes
-              </Nav.Link> */}
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <div className="icones-nav">
+        <div className="op">
+          <Link to="/equipe"><RiTeamFill /> Equipe</Link>
+        </div>
+        <div className="op">
+          <Link to="/prestacao-de-contas"><FaMoneyBillTransfer /> Prestação de Contas</Link>
+        </div>
+      </div>
     </div>
   );
 }
