@@ -20,6 +20,21 @@ import { FaCalendarCheck } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function InicioCrianca() {
+  const [eventos, setEventos] = useState("");
+  const categoriaAtual = "placeholder";
+
+  useEffect(() => {
+    async function loadEventos() {
+      const response = await apiLocal.get("/listar-eventos");
+      setEventos(
+        response.data.filter((item) => item.categoriaId === categoriaAtual)
+      );
+
+      console.log(eventos);
+    }
+    loadEventos();
+  }, [eventos]);
+
   return (
     <div className="container-geral-crianca">
       <div className="container-logo">
