@@ -73,7 +73,7 @@ export default function PrestacaoConta() {
         <div className="square_login">
           <div className="content-square_login">
             <div className="title_login">
-              <h2>Conta</h2>
+              <h2>Enviar balancete</h2>
             </div>
             <div className="input-group_login">
               <form onSubmit={handleConta}>

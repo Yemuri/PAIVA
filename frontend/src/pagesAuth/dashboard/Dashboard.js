@@ -123,7 +123,7 @@ export default function Dashboard() {
           className="container-dash"
         >
           <form onSubmit={handleCadastrar}>
-            <h2>Criar evento - Abrigo de idosos</h2>
+            <h2>Criar evento</h2>
             <div className="container-eventos">
               <select
                 value={idCategoria}
