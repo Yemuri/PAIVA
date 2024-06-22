@@ -68,7 +68,7 @@ export default function PrestacaoConta() {
   }
 
   return (
-    <div className="bodyLogin">
+    <div id="bodyLogin">
       <main class="main_login">
         <div className="square_login">
           <div className="content-square_login">

@@ -1,155 +1,187 @@
-*{
-    margin: 0 !important;
-}
-.rosa{
-    background-color: #FA0644;
+.rosa {
+  background-color: #fa0644;
 }
 
-.verde{
-    background-color: #2f4f4f;
+.verde {
+  background-color: #2f4f4f;
 }
 
-.roxo{
-    background-color: #800080;
+.roxo {
+  background-color: #800080;
 }
 
-.roxinho{
-    background-color: #AA02FF;
+.roxinho {
+  background-color: #aa02ff;
 }
 
-.azul{
-    background-color: #09b3f7;
+.azul {
+  background-color: #09b3f7;
 }
 
-.amarelo{
-    background-color: #f3c200;
+.amarelo {
+  background-color: #f3c200;
 }
 
-.laranja{
-    background-color: #FA5300;
+.laranja {
+  background-color: #fa5300;
 }
 
-.vermelho{
-    background-color: #ef2400;
+.vermelho {
+  background-color: #ef2400;
 }
 
-.branco{
-    background-color: #f0f0f0;
+.branco {
+  background-color: #f0f0f0;
 }
 
 .geral {
-    background: #E0E1DF;
-    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.25) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    
-.logo-leite{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1%; 
-    width: 100%;
+  background: #e0e1df;
+  background-image: url("../../../images/fundoleite.png");
+  /* background-image: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 19%,
+    rgba(0, 0, 0, 0.25) 100%
+  ); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logo-leite h1{
-    padding: 2%;
-    font-weight: bold;
+.paragrafo-just {
+  text-align: cen;
 }
 
-.logo-leite img{
-    width: 8%;
+.logo-leite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  width: 100%;
 }
 
-.caixinhas-leite{
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    padding: 1%;
+.logo-leite h1 {
+  padding: 2%;
+  font-weight: bold;
 }
 
-.caixa{
-    border-radius: 20px;
-    color: aliceblue;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-    
-.caixa p{
-    text-align: justify;
-}
-    
-.caixa img{
-    width: 100%;
-    border-radius: 13px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}   
-
-#img{
-    box-shadow: none;
-    max-width: 30%;
+.logo-leite img {
+  width: 8%;
 }
 
-#text{
-    padding: 2%;
-    color: #2f4f4f;
-    max-width: 67%;
+.caixinhas-leite {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
 }
 
-#icon-text{
-    font-size: 2em;
-    padding: 0.5% 2% 3% 1%;
+.caixa {
+  border-radius: 20px;
+  color: aliceblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#cursos{
-    padding: 1.8%;
-    max-width: 23%;
+.caixa p {
+  text-align: justify;
 }
 
-#icon-cursos{
-    padding: 3%;
-    font-size: 3em;
+#evento-leite {
+  width: 10%;
+  border-radius: 10px;
+  background-color: #b27092d8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #020202e9;
 }
 
-.evento-leite{
-    /* border: solid 3px red; */
-    width: 32.5%;
-    /* display: flex; */
-    border-radius: 10px;
-    /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
-        /* background-color: #fa5300; */
-        /* background-image: linear-gradient(62deg, #fa5300 37%, #F7CE68 100%); */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    color: aliceblue;
+.infos-leite {
+  color: #020202b9;
+  padding-bottom: 3%;
+}
+
+.img-evento-leite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.descricao-evento-leite {
+  width: 100%;
+  padding: 3%;
+  text-align: justify;
+}
+
+.caixa img {
+  width: 100%;
+  border-radius: 13px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#img {
+  box-shadow: none;
+  max-width: 30%;
+}
+
+#text {
+  padding: 2%;
+  color: #2f4f4f;
+  max-width: 67%;
+}
+
+#icon-text {
+  font-size: 2em;
+  padding: 0.5% 2% 3% 1%;
+}
+
+#cursos {
+  padding: 1.8%;
+  max-width: 23%;
+}
+
+#icon-cursos {
+  padding: 3%;
+  font-size: 3em;
+}
+
+.evento-leite {
+  /* border: solid 3px red; */
+  width: 32.5%;
+  /* display: flex; */
+  border-radius: 10px;
+  /* background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+  /* background-color: #fa5300; */
+  /* background-image: linear-gradient(62deg, #fa5300 37%, #F7CE68 100%); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
 }
 
 .evento-leite:hover {
-    transition: 0.3s;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  transition: 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.img-evento-leite{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1%;
+.img-evento-leite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
 
-.img-evento-leite img{
-    width: 100%;
-    border-radius: 10px;
+.img-evento-leite img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.descricao-evento-leite{
-    width: 100%;
-    padding: 3%;
-    text-align: justify;
+.descricao-evento-leite {
+  width: 100%;
+  padding: 3%;
+  text-align: justify;
 }
 
-.infos-leite{
-    color: #f0f0f0b9;
-    margin-bottom: 3%;
+.infos-leite {
+  color: #f0f0f0b9;
+  margin-bottom: 3%;
 }

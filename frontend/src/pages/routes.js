@@ -49,10 +49,11 @@ export default function Rotas() {
         <Route path="/casa-do-leite" element={<InicioLeite />} />
         <Route path="/casa-da-crianca" element={<InicioCrianca />} />
         <Route path="/abrigo-para-idosos" element={<InicioIdoso />} />
-        <Route path="/equipe" element={<InicioEquipe />} />
+        {/* <Route path="/equipe" element={<InicioEquipe />} />  */}
         <Route path="/prestacao-de-contas" element={<InicioContas />} />
         <Route path="/crud" element={<CrudEvento />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

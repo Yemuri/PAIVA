@@ -89,9 +89,8 @@ export default function Footer() {
         <Modal
           isOpen={modalAberto}
           onRequestClose={fecharModal}
-
-          className="container-modal">
-
+          className="container-modal"
+        >
           <div className="desenvolvedores">
             <h3>Desenvolvedores:</h3>
 
@@ -131,16 +130,19 @@ export default function Footer() {
               {" "}
               <p>Yemuri Wanderlei Teodoro</p>
             </a>
+            <h4>Orientador:</h4>
+            <br />
+            <h5>Prof. Dr. Elvio Gilberto da Silva</h5>
           </div>
 
           <div className="logo">
             <h3>Parceria com:</h3>
             <h5>Projeto de Extensão - Fábrica de Softwares</h5>
             <Link to="https://unisagrado.edu.br/site/conteudo/11184-fabrica-de-software-desenvolvimento-de-websi.html">
-              <img className="imagem1" src={logo2} />
+              <img className="imagem1" src={logo2} style={{ width: "20vw" }} />
             </Link>
             <Link to="https://unisagrado.edu.br">
-              <img className="imagem1" src={logo3} />
+              <img className="imagem1" src={logo3} style={{ width: "15vw" }} />
             </Link>
           </div>
         </Modal>

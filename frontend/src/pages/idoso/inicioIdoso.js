@@ -14,14 +14,15 @@ import { FaCalendarCheck } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function InicioIdoso() {
-
   const [eventos, setEventos] = useState("");
-  const categoriaAtual = "placeholder"
+  const categoriaAtual = "43dcea80-21ed-4c97-a9ac-0c2f928d3d0b";
 
   useEffect(() => {
     async function loadEventos() {
       const response = await apiLocal.get("/listar-eventos");
-      setEventos(response.data.filter((item) => item.categoriaId === categoriaAtual));
+      setEventos(
+        response.data.filter((item) => item.categoriaId === categoriaAtual)
+      );
     }
     loadEventos();
   }, [eventos]);
@@ -57,11 +58,22 @@ export default function InicioIdoso() {
               </div>
               <div className="descricao-evento-crianca">
                 <div className="infos-crianca">
-                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
-                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
                 </div>
                 <h2>Cursos de Literatura</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
               </div>
             </div>
             <div className="evento-crianca">
@@ -70,11 +82,22 @@ export default function InicioIdoso() {
               </div>
               <div className="descricao-evento-crianca">
                 <div className="infos-crianca">
-                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
-                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
                 </div>
                 <h2>Cursos de Literatura</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
               </div>
             </div>
             <div className="evento-crianca">
@@ -83,11 +106,22 @@ export default function InicioIdoso() {
               </div>
               <div className="descricao-evento-crianca">
                 <div className="infos-crianca">
-                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
-                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
                 </div>
                 <h2>Cursos de Literatura</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
               </div>
             </div>
           </>
@@ -95,22 +129,24 @@ export default function InicioIdoso() {
           <>
             {eventos.map((item) => {
               return (
-                <div className="evento-crianca">
+                <div className="evento-crianca" style={{ width: "22vw" }}>
                   <div className="img-evento-crianca">
                     <img src={`http://localhost:3333/files/${item.banner}`} />
                   </div>
                   <div className="descricao-evento-crianca">
                     <div className="infos-crianca">
-                      <p><FaCalendarCheck /> {item.data}</p>
+                      <p>
+                        <FaCalendarCheck /> {item.data}
+                      </p>
                     </div>
                     <h2>{item.nome}</h2>
                     <p>{item.descricao}</p>
                   </div>
                 </div>
-              )
+              );
             })}
           </>
-        )}  
+        )}
       </section>
       <div className="carrossel-maps">
         <Mapa />

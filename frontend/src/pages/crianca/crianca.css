@@ -122,7 +122,6 @@
 .img-evento-crianca img {
   width: 100%;
   border-radius: 10px;
-
 }
 
 .descricao-evento-crianca {
@@ -147,7 +146,7 @@
   overflow: hidden;
   width: 100%;
   height: 400px;
-} 
+}
 
 .carousel-controls {
   position: absolute;
@@ -167,7 +166,7 @@
   border-radius: 5px;
 }
 .carousel-control:hover {
-  background-color: #d7a57b
+  background-color: #d7a57b;
 }
 
 .carousel-control.active {

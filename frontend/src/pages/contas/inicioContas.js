@@ -25,24 +25,27 @@ export default function InicioContas() {
           <h2>
             <FaMoneyBillTransfer /> Prestação de Contas
           </h2>
-          {balancete.length === 0 ? (
-            <h2>Aguardando balancete...</h2>
-          ) : (
-            <>
-              {balancete.map((item) => {
-                return (
-                  <ul>
-                    <h2>{item.nome}</h2>
-                    <Link to={`http://localhost:3333/files/${item.banner}`}>
-                      <FaFilePdf color="purple" size="50" />
-                    </Link>
-                    <h3 style={{ textAlign: "justify" }}>{item.ano}</h3>
-                    <br /> <br /> <br />
-                  </ul>
-                );
-              })}
-            </>
-          )}
+
+          <div className="itens-conta">
+            {balancete.length === 0 ? (
+              <h2>Aguardando balancete...</h2>
+            ) : (
+              <>
+                {balancete.map((item) => {
+                  return (
+                    <ul>
+                      <h2>{item.nome}</h2>
+                      <Link to={`http://localhost:3333/files/${item.banner}`}>
+                        <FaFilePdf color="black" size="50" />
+                      </Link>
+                      <h3 style={{ textAlign: "justify" }}>{item.ano}</h3>
+                      <br /> <br /> <br />
+                    </ul>
+                  );
+                })}
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -9,27 +9,6 @@ import { toast } from "react-toastify";
 import { FaFilePdf } from "react-icons/fa6";
 import PrestacaoConta from "../../pages/prestacao_conta/paginaConta";
 
-{
-  /*
-
- Eae Yemuri, blz? Então cara, ajustei aquele problema com as categorias
- Você estava tentando puxar as categorias da tabela "eventos" e não "eventos-categorias"
- Criei um controller e services para fazer a chamada delas e fiz o começinho de um Get de eventos
-
-  Segue abaixo as novas rotas, espero não atrapalhar muito 😻
- 👇👇👇👇👇
-
- "/listar-categorias-eventos" => listar categorias dos eventos
- "/listar-eventos" => listar eventos em si
-
- obs: ta ficando bem bonito o layout, parabens ao envolvidos!!!
-
- obs²: Desculpa meu sumiço do projeto, estava re-organizando minha vida e me desculpa pelos
-       Tremendos atrasos na minha participação, qualquer coisa me enviem mensagem e desculpa
-       Novamente. Espero não ter atrasado tanto o projeto...
-*/
-}
-
 export default function Dashboard() {
   const [nome, setNome] = useState("");
   const [dataEvento, setDataEvento] = useState("");
@@ -75,7 +54,6 @@ export default function Dashboard() {
         },
       });
       setCategoria(resposta.data);
-      // console.log(resposta.data);
     }
     loadCategorias();
   }, []);
@@ -120,7 +98,6 @@ export default function Dashboard() {
   }, [balancete]);
 
   const [modalAberto, setModalAberto] = useState(false);
-  const [modalBalancete, setModalBalancete] = useState(false);
 
   function abrirModal() {
     setModalAberto(true);
@@ -130,22 +107,21 @@ export default function Dashboard() {
     setModalAberto(false);
   }
 
-  function abrirModalBalancete() {
-    setModalAberto(true);
-  }
-
-  function fecharModalBalancete() {
-    setModalAberto(false);
-  }
-
   return (
     <div className="contGeral-dashboard">
       <h1>Dashboard</h1>
       <div className="container-categoria-modal">
-        <button onClick={abrirModal} style={{ margin: "2%" }}>
+        <button
+          onClick={abrirModal}
+          style={{ margin: "2%", borderRadius: ".5rem" }}
+        >
           <h3>Criar Evento</h3>
         </button>
-        <Modal isOpen={modalAberto} onRequestClose={fecharModal}>
+        <Modal
+          isOpen={modalAberto}
+          onRequestClose={fecharModal}
+          className="container-dash"
+        >
           <form onSubmit={handleCadastrar}>
             <h2>Criar evento - Abrigo de idosos</h2>
             <div className="container-eventos">
@@ -199,14 +175,18 @@ export default function Dashboard() {
                 accept="image/jpeg, image/png, image/jpg"
                 onChange={handleImagemIdoso}
               />
-              <button>Cadastrar evento</button>
+              <button style={{ borderRadius: ".5rem" }}>
+                Cadastrar evento
+              </button>
             </div>
           </form>
         </Modal>
+        <br />
+        <br />
         <PrestacaoConta />
       </div>
       <br /> <br /> <br />
-      <div>
+      {/* <div>
         <h1>Mostrar eventos</h1>
         {eventos.length === 0 ? (
           <h2>Aguardando eventos</h2>
@@ -252,7 +232,7 @@ export default function Dashboard() {
             })}
           </>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }

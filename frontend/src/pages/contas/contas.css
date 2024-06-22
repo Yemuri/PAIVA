@@ -1,73 +1,41 @@
-.container-contas{
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.container-contas {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    background-color: #f4e3e3b5;
-    background-image: url("../../images/bck.png");
-    background-size: cover; /*imagem completa todo o fundo*/
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  background-color: #f4e3e3b5;
+  background-image: url("../../images/bck.png");
+  background-size: cover; /*imagem completa todo o fundo*/
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
-.container-cards-pdf{
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap; /* permitir que os cards possam ir para a próxima linha quando não houver espaço suficiente. */
-    gap: 16px;
-    justify-content: center;
+.title_contas {
+  font-size: 45px;
+  width: auto;
+  text-align: center;
+  color: black;
+  border: dashed rgb(0, 0, 0) 1px;
+  background-color: #aeaaaac5;
+  box-shadow: #bcbabac7 0.2rem 0.1rem 0.3rem;
 }
 
-.title_contas{
-    font-size: 45px;
-    text-align: center;
-    color: black;
-    /* font-weight: bold; */
+.itens-conta {
+  padding: 1rem;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-pdf{
-    border-radius: 0 20px 0 20px;
-    text-align: center;
-    /* backdrop-filter: blur(10px); */
-    background-color: rgba(245, 245, 220, 0.541);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
-    padding: 20px;
-    flex: 1 1 calc(25% - 32px); /* define que cada card deve ocupar aproximadamente 25% do contêiner, ajustando-se com a margem*/
-    max-width: calc(25% - 32px); /* define a largura máxima que o card pode ter, garantindo que ele nunca ultrapasse o valor calculado. */
+.body-card-pdf > a {
+  color: black;
 }
 
-.title-card-pdf{
-    width: 100%;  
-    padding: 2%;  
-    color: black;
-}
-
-.body-card-pdf{
-    font-size: 150px;
-}
-
-.body-card-pdf > a{
-    color: black;
-}
-
-.card-pdf:hover{
-    background-color: #d3531caf;
-    transition: 0.5s;
-}
-
-@media (max-width: 768px) {
-    .card-pdf {
-        flex: 1 1 calc(50% - 32px);
-        max-width: calc(50% - 32px);
-    }
-}
-
-@media (max-width: 480px) {
-    .card-pdf {
-        flex: 1 1 calc(100% - 32px);
-        max-width: calc(100% - 32px);
-    }
+.card-pdf:hover {
+  background-color: #d3531caf;
+  transition: 0.5s;
 }

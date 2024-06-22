@@ -1,5 +1,6 @@
 import "./crianca.css";
-
+import apiLocal from "../../APIs/APILocal";
+import { useState, useEffect, useContext } from "react";
 import CarrosselCrianca from "./carroselCrianca";
 
 // IMAGENS
@@ -21,7 +22,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function InicioCrianca() {
   const [eventos, setEventos] = useState("");
-  const categoriaAtual = "placeholder";
+  const categoriaAtual = "d2eb58d6-d1b7-4bc8-a3c2-d247ea63f144";
 
   useEffect(() => {
     async function loadEventos() {
@@ -44,75 +45,106 @@ export default function InicioCrianca() {
         </header>
       </div>
       <section className="eventos-crianca">
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste} />
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p>
-                <FaCalendarCheck /> 27 de junho de 2024
-              </p>
-              <p>
-                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
-              </p>
+        {eventos.length === 0 ? (
+          <>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
-              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
-              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
-              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
-            </p>
-          </div>
-        </div>
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste} />
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p>
-                <FaCalendarCheck /> 27 de junho de 2024
-              </p>
-              <p>
-                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
-              </p>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
-              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
-              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
-              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
-            </p>
-          </div>
-        </div>
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste} />
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p>
-                <FaCalendarCheck /> 27 de junho de 2024
-              </p>
-              <p>
-                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
-              </p>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p>
+                    <FaCalendarCheck /> 27 de junho de 2024
+                  </p>
+                  <p>
+                    <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+                  </p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+                  tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+                  urna ac vulputate pulvinar, lacus est suscipit neque, at
+                  commodo lacus nisl quis enim. Proin pharetra lobortis sem eu
+                  rutrum.
+                </p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
-              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
-              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
-              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
-            </p>
-          </div>
-        </div>
+          </>
+        ) : (
+          <>
+            {eventos.map((item) => {
+              return (
+                <div className="evento-crianca" style={{ width: "25vw" }}>
+                  <div className="img-evento-crianca">
+                    <img
+                      src={`http://localhost:3333/files/${item.banner}`}
+                      alt=""
+                    />
+                  </div>
+                  <div className="descricao-evento-crianca">
+                    <div className="infos-crianca">
+                      <p>
+                        <FaCalendarCheck /> {item.data}
+                      </p>
+                    </div>
+                    <h2>{item.nome}</h2>
+                    <p>{item.descricao}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </>
+        )}
       </section>
       <div className="content-crianca">
         <div className="container-p">
@@ -127,7 +159,7 @@ export default function InicioCrianca() {
             negligência, abandono, abuso ou vulnerabilidade social, garantindo
             seus direitos conforme o Estatuto da Criança e do Adolescente.
           </p>
-          <img src={Image3} alt="" />
+          <img src={img1} alt="" />
         </div>
         <div className="container-p">
           <CarrosselCrianca />
@@ -154,7 +186,7 @@ export default function InicioCrianca() {
             se envolver, entre em contato com a Casa da Criança pelo telefone
             (14) 3222-5171!
           </p>
-          <img src={Image4} alt="" />
+          <img src={img2} alt="" />
         </div>
         <div className="contato-maps">
           <div className="maps">
