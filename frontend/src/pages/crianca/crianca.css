@@ -12,7 +12,6 @@
   width: 95%;
   justify-content: space-around;
   align-items: center;
-  overflow-x: hidden;
 }
 
 .content-crianca {
@@ -50,15 +49,15 @@
 
 .container-p {
   display: flex;
-  align-items: center;
+  align-items: center; /* Centraliza verticalmente o texto e a imagem */
   width: 95%;
   margin: 1%;
+  gap: 20px; /* Add gap between image and text */
 }
 
 .container-p p {
-  align-content: center;
   box-shadow: 7px 7px 15px 2px #a67d624f;
-  padding: 0.5rem;
+  padding: 1rem; /* Increase padding */
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.589);
   height: fit-content;
@@ -66,13 +65,15 @@
   border-right: solid #866752bf 1px;
   border-radius: 0 20px;
   text-align: justify;
-  background-color: rgba(255, 255, 255, 0.589);
   letter-spacing: 1px;
+  line-height: 1.6; /* Increase line height for better readability */
+  font-size: 1.2rem; /* Increase font size */
 }
 
 .container-p > img {
   width: 40%;
   border-radius: 20px;
+  margin-right: 20px; /* Add margin to the right */
 }
 
 .contato-maps {
@@ -88,48 +89,88 @@
   margin: 1%;
 }
 
-.eventos-crianca{
+.eventos-crianca {
   width: 95%;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
   align-items: center;
   padding: 1%;
 }
 
-.evento-crianca{
+.evento-crianca {
   width: 32.5%;
   border-radius: 10px;
   background-color: #b27092d8;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #020202e9;
 }
 
 .evento-crianca:hover {
   transition: 0.3s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.img-evento-crianca{
+.img-evento-crianca {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1%;
 }
 
-.img-evento-crianca img{
+.img-evento-crianca img {
   width: 100%;
   border-radius: 10px;
+
 }
 
-.descricao-evento-crianca{
+.descricao-evento-crianca {
   width: 100%;
   padding: 3%;
   text-align: justify;
 }
 
-.infos-crianca{
+.infos-crianca {
   color: #020202b9;
   padding-bottom: 3%;
+}
+
+.cont-geral {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.cont-items {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+} 
+
+.carousel-controls {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-control {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.carousel-control:hover {
+  background-color: #d7a57b
+}
+
+.carousel-control.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
 }
