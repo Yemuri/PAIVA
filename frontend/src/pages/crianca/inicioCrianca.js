@@ -6,8 +6,9 @@ import CarrosselCrianca from "./carroselCrianca";
 import LogoCrianca from "../../images/logo-crianca.png";
 import img1 from "../../images/inst1.png";
 import img2 from "../../images/inst2.png";
-import img3 from "../../images/inst3.png"
-import Teste from "../../images/PAIVAwhats.png"
+import Image3 from "../../images/image3.jpg";
+import Image4 from "../../images/image4.jpg";
+import Teste from "../../images/PAIVAwhats.png";
 
 // ICONES
 import { FaPhone } from "react-icons/fa";
@@ -17,7 +18,6 @@ import { MdAlternateEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import { FaCalendarCheck } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
-
 
 export default function InicioCrianca() {
   return (
@@ -31,42 +31,72 @@ export default function InicioCrianca() {
       <section className="eventos-crianca">
         <div className="evento-crianca">
           <div className="img-evento-crianca">
-            <img src={Teste}/>
+            <img src={Teste} />
           </div>
           <div className="descricao-evento-crianca">
             <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+              <p>
+                <FaCalendarCheck /> 27 de junho de 2024
+              </p>
+              <p>
+                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+              </p>
             </div>
             <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
+              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
+            </p>
+          </div>
         </div>
         <div className="evento-crianca">
           <div className="img-evento-crianca">
-            <img src={Teste}/>
+            <img src={Teste} />
           </div>
           <div className="descricao-evento-crianca">
             <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+              <p>
+                <FaCalendarCheck /> 27 de junho de 2024
+              </p>
+              <p>
+                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+              </p>
             </div>
             <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
+              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
+            </p>
+          </div>
         </div>
         <div className="evento-crianca">
           <div className="img-evento-crianca">
-            <img src={Teste}/>
+            <img src={Teste} />
           </div>
           <div className="descricao-evento-crianca">
             <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+              <p>
+                <FaCalendarCheck /> 27 de junho de 2024
+              </p>
+              <p>
+                <FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei
+              </p>
             </div>
             <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis
+              tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus,
+              urna ac vulputate pulvinar, lacus est suscipit neque, at commodo
+              lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.
+            </p>
+          </div>
         </div>
       </section>
       <div className="content-crianca">
@@ -82,7 +112,7 @@ export default function InicioCrianca() {
             negligência, abandono, abuso ou vulnerabilidade social, garantindo
             seus direitos conforme o Estatuto da Criança e do Adolescente.
           </p>
-          <img src={img1} alt="" />
+          <img src={Image3} alt="" />
         </div>
         <div className="container-p">
           <CarrosselCrianca />
@@ -109,7 +139,7 @@ export default function InicioCrianca() {
             se envolver, entre em contato com a Casa da Criança pelo telefone
             (14) 3222-5171!
           </p>
-          <img src={img2} alt="" />
+          <img src={Image4} alt="" />
         </div>
         <div className="contato-maps">
           <div className="maps">
@@ -127,10 +157,9 @@ export default function InicioCrianca() {
           </div>
 
           <div className="contato">
-
             <h3>Contato</h3>
             <p>
-              <CiLocationOn /> Rua 12 de Outubro, 9-51, Bela Vista 
+              <CiLocationOn /> Rua 12 de Outubro, 9-51, Bela Vista
             </p>
             <p>
               <FaPhone /> (14) 3222-3915
