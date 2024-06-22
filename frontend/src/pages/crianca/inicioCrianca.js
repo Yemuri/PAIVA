@@ -18,8 +18,24 @@ import { FaFacebook } from "react-icons/fa";
 import { FaCalendarCheck } from "react-icons/fa6";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
+import { useState, useEffect } from "react";
+import apiLocal from "../../APIs/APILocal";
 
 export default function InicioCrianca() {
+
+  const [eventos, setEventos] = useState("");
+  const categoriaAtual = "placeholder"
+
+  useEffect(() => {
+    async function loadEventos() {
+      const response = await apiLocal.get("/listar-eventos");
+      setEventos(response.data.filter((item) => item.categoriaId === categoriaAtual));
+
+      console.log(eventos)
+    }
+    loadEventos();
+  }, [eventos]);
+
   return (
     <div className="container-geral-crianca">
       <div className="container-logo">
@@ -29,45 +45,70 @@ export default function InicioCrianca() {
         </header>
       </div>
       <section className="eventos-crianca">
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste}/>
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+
+        {eventos.length === 0 ? (
+          <>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste}/>
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
-        <div className="evento-crianca">
-          <div className="img-evento-crianca">
-            <img src={Teste}/>
-          </div>
-          <div className="descricao-evento-crianca">
-            <div className="infos-crianca">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            <div className="evento-crianca">
+              <div className="img-evento-crianca">
+                <img src={Teste} />
+              </div>
+              <div className="descricao-evento-crianca">
+                <div className="infos-crianca">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
+          </>
+        ) : (
+          <>
+            {eventos.map((item) => {
+              return (
+                <div className="evento-crianca">
+                  <div className="img-evento-crianca">
+                    <img src={`http://localhost:3333/files/${item.banner}`} />
+                  </div>
+                  <div className="descricao-evento-crianca">
+                    <div className="infos-crianca">
+                      <p><FaCalendarCheck /> {item.data}</p>
+                    </div>
+                    <h2>{item.nome}</h2>
+                    <p>{item.descricao}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </>
+        )}
+
       </section>
       <div className="content-crianca">
         <div className="container-p">
@@ -130,7 +171,7 @@ export default function InicioCrianca() {
 
             <h3>Contato</h3>
             <p>
-              <CiLocationOn /> Rua 12 de Outubro, 9-51, Bela Vista 
+              <CiLocationOn /> Rua 12 de Outubro, 9-51, Bela Vista
             </p>
             <p>
               <FaPhone /> (14) 3222-3915

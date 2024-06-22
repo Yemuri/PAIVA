@@ -11,14 +11,27 @@ import Foto2 from "../../../images/foto2-leite.jpg"
 // ICONES
 import { FaCirclePlus, FaComputer } from "react-icons/fa6";
 import { BiBulb } from "react-icons/bi";
-import { FaMapMarkerAlt, FaCalendarCheck }  from "react-icons/fa";
+import { FaMapMarkerAlt, FaCalendarCheck } from "react-icons/fa";
 import { LuLampDesk } from "react-icons/lu";
 import { MdOutlineCleaningServices, MdBabyChangingStation } from "react-icons/md";
 import { GiLipstick, GiPencilBrush, GiSlicedBread } from "react-icons/gi";
 
-
+import { useState, useEffect } from "react";
+import apiLocal from "../../../APIs/APILocal";
 
 export default function InicioLeite() {
+
+  const [eventos, setEventos] = useState("");
+  const categoriaAtual = "placeholder"
+
+  useEffect(() => {
+    async function loadEventos() {
+      const response = await apiLocal.get("/listar-eventos");
+      setEventos(response.data.filter((item) => item.categoriaId === categoriaAtual));
+    }
+    loadEventos();
+  }, [eventos]);
+
   return (
     <div className="geral">
 
@@ -28,45 +41,69 @@ export default function InicioLeite() {
       </div>
 
       <section className="caixinhas-leite">
-        <div className="evento-leite laranja">
-          <div className="img-evento-leite">
-            <img src={Books} alt="Foto ilustrativa" />
-          </div>
-          <div className="descricao-evento-leite">
-            <div className="infos-leite">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+
+        {eventos.length === 0 ? (
+          <>
+            <div className="evento-leite laranja">
+              <div className="img-evento-leite">
+                <img src={Books} alt="Foto ilustrativa" />
+              </div>
+              <div className="descricao-evento-leite">
+                <div className="infos-leite">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
-        <div className="evento-leite roxo">
-          <div className="img-evento-leite">
-            <img src={Books}/>
-          </div>
-          <div className="descricao-evento-leite">
-            <div className="infos-leite">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            <div className="evento-leite roxo">
+              <div className="img-evento-leite">
+                <img src={Books} />
+              </div>
+              <div className="descricao-evento-leite">
+                <div className="infos-leite">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
-        <div className="evento-leite rosa">
-          <div className="img-evento-leite">
-            <img src={Books}/>
-          </div>
-          <div className="descricao-evento-leite">
-            <div className="infos-leite">
-              <p><FaCalendarCheck /> 27 de junho de 2024</p>
-              <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+            <div className="evento-leite rosa">
+              <div className="img-evento-leite">
+                <img src={Books} />
+              </div>
+              <div className="descricao-evento-leite">
+                <div className="infos-leite">
+                  <p><FaCalendarCheck /> 27 de junho de 2024</p>
+                  <p><FaMapMarkerAlt /> Rua Alguma Coisa, 1-23, Vila do Não Sei</p>
+                </div>
+                <h2>Cursos de Literatura</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
+              </div>
             </div>
-            <h2>Cursos de Literatura</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus, nisl vel auctor suscipit, turpis felis tempus odio, quis suscipit erat elit eu ex. Vestibulum luctus, urna ac vulputate pulvinar, lacus est suscipit neque, at commodo lacus nisl quis enim. Proin pharetra lobortis sem eu rutrum.</p>
-          </div> 
-        </div>
+          </>
+        ) : (
+          <>
+            {eventos.map((item) => {
+              return (
+                <div className="evento-crianca">
+                  <div className="img-evento-crianca">
+                    <img src={`http://localhost:3333/files/${item.banner}`} />
+                  </div>
+                  <div className="descricao-evento-crianca">
+                    <div className="infos-crianca">
+                      <p><FaCalendarCheck /> {item.data}</p>
+                    </div>
+                    <h2>{item.nome}</h2>
+                    <p>{item.descricao}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </>
+        )}
 
         <div className="caixa branco" id="text">
           <div id="icon-text">
@@ -78,7 +115,7 @@ export default function InicioLeite() {
         <div className="caixa" id="img">
           <img src={Foto1} alt="foto ilustrativa" />
         </div>
-        
+
         <div className="caixa" id="img">
           <img src={Foto2} alt="foto ilustrativa" />
         </div>
